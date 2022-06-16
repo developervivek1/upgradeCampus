@@ -7,7 +7,8 @@
 @font-face {
 	font-family: 'Conv_AvenirLTProBook';
 	src: url('fonts/AvenirLTProBook.eot');
-	src: url('fonts/AvenirLTProBook.woff') format('woff'), url('fonts/AvenirLTProBook.ttf') format('truetype'), url('fonts/AvenirLTProBook.svg') format('svg');	
+	src: url('fonts/AvenirLTProBook.woff') format('woff'), url('fonts/AvenirLTProBook.ttf') format('truetype'), url('fonts/AvenirLTProBook.svg') format('svg');
+	
 }
 
 /* body{
@@ -16,4 +17,89 @@
 } */
 
 
+/* =========== navbar =========== */
 
+.navbar .megamenu{ padding: 1rem; }
+
+.navbar .dropdown-menu{
+    border: none;
+    border-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    
+    .navbar .has-megamenu{position:static!important;}
+    .navbar .megamenu{left:0; right:0; width:100%; margin-top:-5px;  }
+    
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top:10px;
+    }
+}
+/* ============ mobile view .end// ============ */
+
+
+/* =========== video section ============= */
+
+.videoSection video{
+    object-fit: cover;
+    width: 100vw;
+    height: 90vh;
+}
+.videoSection .overlay{
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.videoText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.videoText h1{
+    color: #EE2C3C;
+}
+
+.videoText button{
+    margin-top: 2rem;
+    width: 251px;
+    height: 50px;
+    background-color: #EE2C3C;
+    color: white;
+}
+
+.videoText .aeroImg{
+    position: absolute;
+    left: -42px;
+}
+
+.bottomBox{
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -45px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 19px #00000014;
+    border-radius: 21px;
+    opacity: 1;
+}
