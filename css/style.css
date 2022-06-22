@@ -641,6 +641,9 @@ box-shadow: 0px 10px 60px #262D7614;
 }
 
 
+footer {
+  margin-top: 1.5rem;
+}
 footer ul li{
   list-style-type: none;
 }
@@ -856,5 +859,25 @@ font-weight: 400;
   bottom: 240px;
 }
 
+footer {
+  margin-top: 10rem;
+}
+
+footer .secondDiv ul li {
+  font-size: 22px;
+  line-height: 60px;
+}
+
+footer .firstDiv ul li img{
+  width: 27px;
+height: 27px;
+margin-right: 5px;
+
+}
+
+footer .firstDiv p {
+  font-size: 13px;
+
+}
 
 }
