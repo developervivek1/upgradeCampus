@@ -880,4 +880,16 @@ footer .firstDiv p {
 
 }
 
+footer .form h6 {
+  font-size: 20px;
+}
+
+footer .form input {
+  width: 65%;
+height: 70px;
+}
+footer .form button {
+  font-size: 24px;
+  width: 30%;
+}
 }
