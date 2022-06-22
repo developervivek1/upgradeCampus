@@ -78,7 +78,9 @@
 
 .subdropdown{
   list-style-type: none;
-  margin-left: 10rem;
+  /* margin-left: 15rem;
+  margin-right: 7rem; */
+  margin: auto;
 }
 
 .subdropdown3{
@@ -93,25 +95,36 @@
   cursor: pointer;
 }
 
-.has-megamenu {
-  position: relative !important;
+.megamenu .subdropdown li:hover{
+  color: #EC2A3D;
 }
 
+.megamenu .subdropdown3 li:hover span{
+  color: #EC2A3D;
+}
 
-.has-megamenu > .nav-link.show::after{
+/*  */
+
+
+
+.nav-link.show > span::after{
   position: absolute;
   content: "";
   background: #EC2A3D;
   color: #EC2A3D !important;
   width: 6px;
   height: 6px;
-  bottom: 7px;
+  bottom: 0px;
   left: 50%;
   border-radius: 100%;
 }
 
-.nav-item .nav-link.show{
+.nav-link.show{
   color: #EC2A3D;
+}
+
+.nav-link.show img{
+  filter: opacity(.5) brightness(2.5) drop-shadow(0 0 0 red) contrast(321%);
 }
 
 .headDiv{
@@ -642,6 +655,11 @@ footer .secondDiv ul li{
   line-height: 42px;
 }
 
+.secondDiv ul li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 footer .firstDiv p{
   font-size: 11px;
   letter-spacing: 0px;
@@ -709,3 +727,134 @@ border: none;
   }
 }
 /* ============ mobile view .end// ============ */
+
+/* =============== media query for 1920 resolution================ */
+
+
+
+
+  @media (min-width: 1650px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 88vw;
+}
+
+#navbar {
+  padding: 16px 10px;
+}
+.navbar-brand img{
+  width: 122px;
+  height: 64px;
+}
+
+.videoText h1{
+  font-size: 54px;
+}
+
+.videoText button {
+  margin-top: 3rem;
+  width: 251px;
+  height: 58px;
+}
+
+.navbar .nav-link,span,li {
+  font-size: 1.2rem;
+}
+
+.btnStudent{
+  padding-top: 16px;
+  width: 161px;
+  height: 58px;
+
+}
+
+.bottomBox {
+  width: 1175px;
+  padding: 1.5rem;
+  bottom: -70px;
+}
+.bottomBox div h6 {
+  font-size: 22px;
+}
+
+.bottomBox div p {
+  margin-top: 5px;
+  font-size: 18px;
+}
+.enrollBtn{
+  width: 170px;
+  height: 70px;
+}
+
+.title h4{
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.title h4 span{
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.title p{
+  font-size: 24px;
+}
+
+.whiteTap{
+  padding: 1rem !important;
+}
+.whiteTap h6 {
+  font-size: 14px;
+}
+.cardContent h6{
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.list-group.fs1 li{
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.list-group.fs2 li{
+  padding-right: 1rem;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.cardBtn{
+  width: 185px;
+height: 49px;
+font-size: 15px;
+font-weight: 400;
+}
+
+.scaleIcon {
+  bottom: 186px;
+}
+
+.techCard .cardContent p {
+  font-size: 17px;
+}
+.techCard .card3 {
+  height: 250px;
+}
+
+.techCard .scaleIcon {
+  bottom: 240px;
+}
+
+.NewAgeCard .card3 {
+  height: 280px;
+}
+
+.NewAgeCard .cardContent p {
+  font-size: 17px;
+}
+
+.NewAgeCard .scaleIcon {
+  bottom: 240px;
+}
+
+
+}
