@@ -6,9 +6,8 @@
 
 @font-face {
 	font-family: 'Conv_AvenirLTProBook';
-	src: url('fonts/AvenirLTProBook.eot');
-	src: url('fonts/AvenirLTProBook.woff') format('woff'), url('fonts/AvenirLTProBook.ttf') format('truetype'), url('fonts/AvenirLTProBook.svg') format('svg');
-	
+  src: url('../fonts/AvenirLTProBook.eot');
+  src: url('../fonts/fonts/AvenirLTProBook.woff')  format('woff'), url('fonts/AvenirLTProBook.ttf') format('truetype'), url('fonts/AvenirLTProBook.svg') format('svg');
 }
 
 /* body{
@@ -207,6 +206,19 @@
     width: 96%;
 }
 
+.btn:hover, .btn:focus {
+  color: #FFFFFF;
+  background-color:#EE2C3C;
+  border-color: #EE2C3C;
+}
+.btn img{
+  transition: all 0.5s;
+}
+.btn:hover img{
+  transform: scaleX(1.4);
+
+}
+
 .enrollBtn{
     position: absolute;
     bottom: 6px;
@@ -282,7 +294,7 @@
   }
 
   .carousel-control-prev-icon {
-    background-image: url('../img/arrow-left.svg')
+    background-image: url('../img/left-aero.svg')
   }
 
   .carousel-control-next-icon {
@@ -336,6 +348,15 @@ box-shadow: 0px 10px 60px #262D7614;
     margin-left: 4px;
   }
 
+  .cardBtn img{
+    filter: opacity(0.6) brightness(0.5) drop-shadow(0 0 0 red) contrast(321%);
+  }
+
+  .cardBtn:hover img{
+    filter: opacity(0.6) brightness(0.9) drop-shadow(0 0 0 white) contrast(321%);
+    transform: scale(1);
+  }
+
   /* .cardBtn span img:first-child{
     display: none;
   }
@@ -354,7 +375,7 @@ box-shadow: 0px 10px 60px #262D7614;
   } */
 
   .cardBtn:hover {
-
+    transition: all 0.5s;
     background: #EC2A3D;
     color: #fff;
     outline: none;
@@ -548,7 +569,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 .NewAgeCard{
   height: 90vh;
-  width: 74%;
+  width: 65%;
 }
 
 .NewAgeCard .card3 {
@@ -566,7 +587,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 .NewAgeCard .scaleIcon {
     position: absolute;
-    bottom: 175px;
+    bottom: 185px;
     left: 35px;
 }
 
