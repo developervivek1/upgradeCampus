@@ -52,9 +52,9 @@
     
 }
 
-.nav-item.active .nav-link{
+/* .nav-item.active .nav-link{
   color: #EC2A3D;
-}
+} */
 
 .nav-item.active{
   position: relative;
@@ -93,6 +93,60 @@
   cursor: pointer;
 }
 
+.has-megamenu {
+  position: relative !important;
+}
+
+
+.has-megamenu > .nav-link.show::after{
+  position: absolute;
+  content: "";
+  background: #EC2A3D;
+  color: #EC2A3D !important;
+  width: 6px;
+  height: 6px;
+  bottom: 7px;
+  left: 50%;
+  border-radius: 100%;
+}
+
+.nav-item .nav-link.show{
+  color: #EC2A3D;
+}
+
+.headDiv{
+  margin-bottom: 1rem;
+  background: #FAFBFC;
+}
+
+.headDiv:hover{
+  background: #FDE8EA;
+}
+.headDiv h6{
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #424143;
+  opacity: 1;
+  margin-bottom: 1.3rem;
+}
+
+.headDiv a{
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: #EE2C3C;
+  opacity: 1;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.headDiv p{
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #424143;
+  opacity: 1;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
 
 
 .btnStudent{
@@ -109,25 +163,7 @@
 .btnStudent:hover, .btnStudent:focus{
     color: #FFFFFF;
 }
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-    
-    .navbar .has-megamenu{position:static!important;}
-    .navbar .megamenu{left:0; right:0; width:100%; margin-top:-5px;  }
-    
-}	
-/* ============ desktop view .end// ============ */
 
-
-/* ============ mobile view ============ */
-@media(max-width: 991px){
-    .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
-        overflow-y: auto;
-        max-height: 90vh;
-        margin-top:10px;
-    }
-}
-/* ============ mobile view .end// ============ */
 
 
 /* =========== video section ============= */
@@ -653,3 +689,23 @@ border: none;
 
 
   
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    
+  .navbar .has-megamenu{position:static !important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:-5px;  }
+  
+}	
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+      overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
