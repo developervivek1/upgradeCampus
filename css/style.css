@@ -933,6 +933,21 @@ footer .form button{
   margin-top: 5px;
   font-size: 18px;
 }
+
+.carousel-control-next {
+  right: 21px;
+}
+.carousel-control-prev {
+  left: 3px;
+}
+.owl-nav .owl-next {
+  right: 11.5%;
+  transform: translate(-11.5%, -50%);
+}
+.owl-nav .owl-prev {
+  left: 11.5%;
+  transform: translate(-11.5%, -50%);
+}
 .enrollBtn{
   width: 170px;
   height: 70px;
