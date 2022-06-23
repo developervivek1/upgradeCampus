@@ -1,19 +1,51 @@
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: AvenirLTProBook;
+}
 
-.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6{
-    font-family: inherit;
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-	font-family: 'Conv_AvenirLTProBook';
-  src: url('../fonts/AvenirLTProBook.eot');
-  src: url('../fonts/fonts/AvenirLTProBook.woff')  format('woff'), url('fonts/AvenirLTProBook.ttf') format('truetype'), url('fonts/AvenirLTProBook.svg') format('svg');
+	font-family: 'AvenirLTProBook';
+  src: url('../fonts/AvenirLTProBook.otf');
 }
 
-/* body{
-    font-family: inherit;
-    font-weight: inherit;
-} */
+@font-face {
+	font-family: 'AvenirLTProBookOblique';
+  src: url('../fonts/AvenirLTProBookOblique.otf');
+}
+@font-face {
+	font-family: 'AvenirLTProLight';
+  src: url('../fonts/AvenirLTProLight.otf');
+}
+@font-face {
+	font-family: 'AvenirLTProLightOblique';
+  src: url('../fonts/AvenirLTProLightOblique.otf');
+}
+@font-face {
+	font-family: 'AvenirLTProMedium';
+  src: url('../fonts/AvenirLTProMedium.otf');
+}
+
+@font-face {
+	font-family: 'AvenirLTProMediumOblique';
+  src: url('../fonts/AvenirLTProMediumOblique.otf');
+}
+@font-face {
+	font-family: 'AvenirLTProOblique';
+  src: url('../fonts/AvenirLTProOblique.otf');
+}
+@font-face {
+	font-family: 'AvenirLTProRoman';
+  src: url('../fonts/AvenirLTProRoman.otf');
+}
 
 
 /* =========== navbar =========== */
@@ -41,6 +73,13 @@
     text-transform: capitalize;
     opacity: 1;
     font-weight: normal;
+    font-family: AvenirLTProBook;
+}
+
+.navbar .nav-link span{
+  font-weight: normal;
+  font-family: AvenirLTProBook;
+
 }
 
 .navbar .nav-link:hover{
@@ -199,12 +238,12 @@
 
 .videoSection video{
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
 }
 .videoSection .overlay{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     background-color: rgba(0,0,0,0.5);
     top: 0;
@@ -222,6 +261,8 @@
 
 .videoText h1{
     color: #EE2C3C;
+    font-family: Avenir LT Pro, 95  !important;
+    font-weight: 900;
 }
 
 .videoText button{
@@ -239,7 +280,7 @@
 
 .bottomBox{
     position: absolute;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, 0);
@@ -251,14 +292,16 @@
 }
 
 .bottomBox div h6{
+    font-weight: 900;
     margin-top: 5px;
     color:#EE2C3C;
     
 }
 
 .bottomBox div p{
+    font-weight: 500;
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0px;
     color: #424143;
     opacity: 1;
@@ -341,7 +384,7 @@
 
   .carousel-control-prev{
     top: 40%;
-    width: 30px;
+    width: 44px;
     height: 30px;
     border-radius: 50px;
     /* background: #ee8f98;
@@ -351,7 +394,7 @@
 
   .carousel-control-next{
     top: 40%;
-    width: 30px;
+    width: 42px;
     height: 30px;
     border-radius: 50px;
     /* background: #ee8f98;
@@ -386,6 +429,11 @@ box-shadow: 0px 10px 60px #262D7614;
 
   .card1:hover .card3 .scaleImg {
     transform: scale(1.1);
+  }
+
+  .cardContent h6{
+    font-size: 18px;
+    font-weight: 900;
   }
 
   .card1:hover .cardContent h6{
@@ -455,15 +503,21 @@ box-shadow: 0px 10px 60px #262D7614;
   }
 
   .whiteTap h6 {
+    margin-top: 3px;
     font-size: 12px;
     font-weight: 400;
   }
 
   .scaleIcon {
     position: absolute;
-    bottom: 135px;
+    bottom: 143px;
     left: 35px;
   }
+
+  .sliderDiv .owl-dots{
+    margin-top: 3rem;
+  }
+
 
   .cardContent ul li {
     list-style-type: none;
@@ -527,8 +581,11 @@ box-shadow: 0px 10px 60px #262D7614;
 .sliderDiv{
   height: 100vh;
 }
-
+.title h4{
+  font-weight: 900;
+}
 .title h4 span{
+  font-weight: 900;
   color: #EE2C3C;
 }
 
@@ -656,22 +713,58 @@ box-shadow: 0px 10px 60px #262D7614;
     left: 35px;
 }
 
-
 footer {
+  background-color: #424143;
   margin-top: 1.5rem;
 }
+
+.imgFooter{
+  position: relative;
+}
+
+footer .imgFooter .imgRed{
+  display: none;
+  transition: all 0.5s;
+}
+
+footer .imgFooter .imgRed,.imgGrey{
+  transition: all 0.5s;
+}
+
+footer .imgFooter:hover .imgRed{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  transition: all 0.9s ease-in;
+  cursor: pointer;
+}
+
+
 footer ul li{
   list-style-type: none;
 }
 
 footer .secondDiv ul li{
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: normal;
   list-style-type: none;
   letter-spacing: 0px;
   color: #FFFFFF;
   text-transform: capitalize;
   opacity: 0.7;
   line-height: 42px;
+  transition: all 0.5s;
+}
+footer .secondDiv ul li:hover{
+  opacity: 1;
+}
+
+.firstDiv ul li a img{
+  transition: all 0.5s;
+}
+
+.firstDiv ul li a:hover img{
+  transform: rotate3d(1, 1, 1, 360deg);
 }
 
 .secondDiv ul li a{
@@ -687,10 +780,11 @@ footer .firstDiv p{
 }
 
 footer .form h6{
-  font-size: 12px;
+  font-weight: 900;
+  font-size: 15px;
   letter-spacing: 0.02px;
   color: #FFFFFF;
-  opacity: 1;
+  opacity: 0.7;
   margin-bottom: 20px;
 }
 
