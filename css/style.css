@@ -1077,17 +1077,29 @@ footer .form button {
 /* ============== reponsive mobile 600px=============== */
 
 @media (max-width:600px){
-  .owl-stage-outer .owl-stage{
+  /* .owl-stage-outer .owl-stage{
     width: 1566px !important;
-    transform: translate3d(39px, 0px, 0px) !important;
+    transform:none;
   }
   .owl-stage .owl-item {
     opacity: 1;
-    /* width: 120px !important; */
     
 }
-.owl-stage .owl-item,.owl-item.active{
+.owl-stage .owl-item.active,.owl-item.center{
   width: 237px !important;
+} */
+
+.owl-stage-outer .owl-stage{
+  width: 2000px !important;
+  /* transform:none; */
+}
+.owl-stage .owl-item.active{
+  width: 235px !important;
+} 
+
+.owl-stage .owl-item {
+  opacity: 1;
+  
 }
 
 .owl-nav .owl-prev {
