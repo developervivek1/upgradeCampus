@@ -76,6 +76,10 @@
   background-image: url('../img/Ellipse\ 56.svg');
 }
 
+.joinCourse span{
+  color: #990000;
+}
+
 .subdropdown{
   list-style-type: none;
   /* margin-left: 15rem;
@@ -106,6 +110,18 @@
 /*  */
 
 
+
+.nav-link.joinCourse.show > span::after{
+  position: absolute;
+  content: "";
+  background: #990000;
+  color: #990000 !important;
+  width: 6px;
+  height: 6px;
+  bottom: 0px;
+  left: 50%;
+  border-radius: 100%;
+}
 
 .nav-link.show > span::after{
   position: absolute;
@@ -424,7 +440,7 @@ box-shadow: 0px 10px 60px #262D7614;
   } */
 
   .cardBtn:hover {
-    transition: all 0.5s;
+    /* transition: all 0.5s; */
     background: #EC2A3D;
     color: #fff;
     outline: none;
@@ -618,7 +634,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 .NewAgeCard{
   height: 90vh;
-  width: 65%;
+  width: 62%;
 }
 
 .NewAgeCard .card3 {
@@ -636,7 +652,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 .NewAgeCard .scaleIcon {
     position: absolute;
-    bottom: 185px;
+    bottom: 193px;
     left: 35px;
 }
 

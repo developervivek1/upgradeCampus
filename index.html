@@ -80,7 +80,7 @@
             <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
             <li class="nav-item"><a class="nav-link" href="#"> Blog </a></li>
             <li class="nav-item dropdown rounded-bottom has-megamenu">
-              <a class="nav-link dropdown-togge position-relative" href="#" data-bs-toggle="dropdown"> <span>Join Courses</span> <span><img src="img/chevron-down.svg" alt=""></span></a>
+              <a class="nav-link dropdown-togge position-relative joinCourse" href="#" data-bs-toggle="dropdown"> <span >Join Courses</span> </a>
               <div class="dropdown-menu megamenu" role="menu">
                 <ul class="d-flex justify-content-between subdropdown3 ps-0 ">
                   <li class="nav-item dropdown has-megamenu">
@@ -822,6 +822,9 @@
           autoplayHoverPause: true,
           startPosition: 'URLHash',
           slideTransition:'linear',
+          smartSpeed: 400,
+          animateIn: 'linear',
+          animateOut: 'linear',
           
           responsive: {
             0: {
@@ -847,7 +850,9 @@
           autoplay: true,
           autoplayTimeout: 2000,
           autoplayHoverPause: true,
-          slideTransition:'linear',
+          smartSpeed: 1000,
+          animateIn: 'linear',
+          animateOut: 'linear',
           
           responsive: {
             0: {
