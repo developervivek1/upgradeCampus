@@ -1158,6 +1158,10 @@ footer .form button {
 }
 
 /* hero video */
+/* 
+#navbar{
+  position:unset !important;
+} */
 
 .videoSection video {
   height: 100%;
@@ -1173,12 +1177,8 @@ footer .form button {
 }
 
 .videoText{
-
-text-align: center;
-position: absolute;
-top: 30%;
-left: 50%;
-transform: translate(-50%,-80%);
+  text-align: center;
+  height: 60vh;
 }
 
 .videoText .text-white{
@@ -1192,7 +1192,9 @@ transform: translate(-50%,-80%);
   height: 40px;
   font-size: 10px;
 }
-
+.bottomBox{
+  bottom: -100px;
+}
 
 }
 
