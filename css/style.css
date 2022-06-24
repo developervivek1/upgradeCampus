@@ -793,6 +793,7 @@ footer .secondDiv ul li:hover{
 }
 
 footer .firstDiv p{
+  margin-top: 15px;
   font-size: 11px;
   letter-spacing: 0px;
   color: #FFFFFF;
