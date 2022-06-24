@@ -315,6 +315,11 @@ body{
     opacity: 1;
 }
 
+.bottomBox img{
+  margin-right: 10px;
+  width: 35%;
+}
+
 
 /* ====== Banner Section ====== */
 
@@ -1209,6 +1214,10 @@ footer .form button {
 
 .owl-two .owl-stage .item img.w-75{
   width: 100% !important;
+}
+.bottomBox img{
+  margin-right: 10px;
+  width: 55%;
 }
 
 }
