@@ -679,6 +679,10 @@ box-shadow: 0px 10px 60px #262D7614;
   background-repeat: no-repeat;
 }
 
+.techProduct .container.w-85{
+  width: 81%;
+}
+
 .NewAgeSection{
   background-image: url('../img/Path.svg') ;
   background-size: cover;
@@ -701,7 +705,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 .techCard .scaleIcon {
   position: absolute;
-  bottom: 190px;
+  bottom: 173px;
   left: 35px;
 }
 
