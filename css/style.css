@@ -1093,9 +1093,13 @@ footer .form button {
   width: 2000px !important;
   /* transform:none; */
 }
-.owl-one .owl-stage .owl-item.active{
+
+
+/* .owl-one .owl-stage .owl-item.active{
   width: 275px !important;
-} 
+}  */
+
+
 
 .owl-stage .owl-item {
   opacity: 1;
