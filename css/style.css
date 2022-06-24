@@ -332,7 +332,6 @@ body{
 }
 .btn:hover img{
   transform: scaleX(1.4);
-
 }
 
 .enrollBtn{
@@ -750,9 +749,10 @@ footer .imgFooter:hover .imgRed{
   display: inline-block;
   position: absolute;
   left: 0;
-  transition: all 0.9s ease-in;
   cursor: pointer;
 }
+
+
 
 
 footer ul li{
@@ -1089,11 +1089,11 @@ footer .form button {
   width: 237px !important;
 } */
 
-.owl-stage-outer .owl-stage{
+.owl-one .owl-stage-outer .owl-stage{
   width: 2000px !important;
   /* transform:none; */
 }
-.owl-stage .owl-item.active{
+.owl-one .owl-stage .owl-item.active{
   width: 275px !important;
 } 
 
@@ -1116,6 +1116,37 @@ footer .form button {
   bottom: 0;
 
 }
+
+/* tech product offerring */
+
+.techProduct .container{
+  width: 100% !important; 
+}
+
+.techCard{
+  overflow-x: scroll;
+
+}
+
+.techCard .row{
+  width: 245%;
+}
+
+
+/* new age section */
+
+.NewAgeCard{
+  height: 100%;
+  width: 95%;
+  overflow-x: scroll;
+}
+
+.NewAgeCard .row{
+  width: 200%;
+
+}
+
+
 }
 
 
