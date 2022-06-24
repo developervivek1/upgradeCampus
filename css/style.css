@@ -3486,7 +3486,9 @@ footer .form button {
   width: 275px !important;
 }  */
 
-
+#navbar {
+  padding: 3vw;
+}
 
 .owl-stage .owl-item {
   opacity: 1;
