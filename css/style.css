@@ -1220,6 +1220,10 @@ footer .form button {
   width: 55%;
 }
 
+.brandSection > .container{
+  width: 100% !important;
+}
+
 }
 
 /* end 600px */
