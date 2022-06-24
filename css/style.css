@@ -1204,6 +1204,13 @@ footer .form button {
   bottom: -120px;
 }
 
+
+/* brand recruiters */
+
+.owl-two .owl-stage .item img.w-75{
+  width: 100% !important;
+}
+
 }
 
 /* end 600px */
