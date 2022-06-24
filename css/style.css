@@ -1163,6 +1163,10 @@ footer .form button {
   position:unset !important;
 } */
 
+.videoSection{
+  padding-bottom: 3rem;
+}
+
 .videoSection video {
   height: 100%;
   border-radius: 35px;
@@ -1193,7 +1197,7 @@ footer .form button {
   font-size: 10px;
 }
 .bottomBox{
-  bottom: -100px;
+  bottom: -120px;
 }
 
 }
