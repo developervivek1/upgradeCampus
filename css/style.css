@@ -1107,18 +1107,17 @@ footer .form button {
 }
 
 .owl-nav .owl-prev {
-  position: absolute;
-  left: 30%;
-  top: 90%;
-  
+  position: static;
+  /* left: 11%;
+  top: 45%;
+  transform: translate(-11%, -50%); */
 }
 
 .owl-nav .owl-next {
-  position: absolute;
-  top: 90%;
-  left: 40%;
-  bottom: 0;
-
+  position:static;
+  /* right: 11%;
+  top: 45%;
+  transform: translate(-11%, -50%); */
 }
 
 /* tech product offerring */
