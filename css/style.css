@@ -1157,6 +1157,38 @@ footer .form button {
 
 }
 
+/* hero video */
+
+.videoSection video {
+  
+  border-radius: 35px;
+    margin-top: 20rem;
+    padding: 1rem;
+}
+
+.videoSection .overlay {
+  display: none;
+  top:20rem;
+  border-radius: 35px;
+}
+
+.videoText{
+  margin-top: 2.5rem;
+text-align: center;
+}
+
+.videoText .text-white{
+  color: black !important;
+
+}
+
+.videoText button {
+  margin-top: 0rem;
+  width: 155px;
+  height: 40px;
+  font-size: 10px;
+}
+
 
 }
 
