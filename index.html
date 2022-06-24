@@ -8,7 +8,7 @@
   <title>Upgrade Campus</title>
 
   <link rel="icon" type="image/x-icon" href="img/Upgrad fav icon.png">
- 
+
   <!-- bs-5  -->
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -31,13 +31,12 @@
 
 <body>
 
-
   <header>
+    <div class="overlay"></div>
     <!-- ============= COMPONENT ============== -->
     <nav id="navbar"
-      class="navbar shadow-sm container navbar-expand-lg fixed-top border-0 navbar-white border rounded-bottom bg-white text-dark">
-      <div class="container-fluid">
-
+      class="navbar container navbar-expand-lg fixed-top border-0 navbar-white border rounded-bottom bg-white text-dark">
+      <div class="w-100 d-flex justify-content-between align-items-center">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,225 +44,245 @@
         <a class="ms-3 navbar-brand" href="#">
           <img src="img/Upgrad Campus logo.png" width="100" alt="">
         </a>
-        
         <div class="collapse navbar-collapse" id="main_nav">
-
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item "> <a class="nav-link position-relative show" href="#" data-bs-toggle="dropdown" aria-expanded="true"><span>Home </span></a></li>
-
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item "> <a class="nav-link position-relative show" href="#" data-bs-toggle="dropdown"
+                aria-expanded="true"><span>Home </span></a></li>
             <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-t position-relative" href="#" data-bs-toggle="dropdown"> <span>Technology Products</span> <span><img src="img/chevron-down.svg" alt=""></span>
-                 </a>
-                <!-- <center> <img src="img/Ellipse 56.svg" alt=""></center> -->
-              <div class="dropdown-menu shadow-sm rounded-bottom megamenu" role="menu">
-                <ul class="d-flex justify-content-center pe-5 me-5 subdropdown">
+              <a class="nav-link dropdown-t position-relative" href="#" data-bs-toggle="dropdown"> <span>Technology
+                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span>
+              </a>
+              <!-- <center> <img src="img/Ellipse 56.svg" alt=""></center> -->
+              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                <ul class="d-flex justify-content-center pe-md-5 me-5 subdropdown">
                   <li>Lecture Capture System</li>
                   <li>Blended Classroom</li>
                   <li>Live Classroom</li>
                 </ul>
-              </div> 
+              </div>
               <!-- dropdown-mega-menu.// -->
             </li>
-
             <li class="nav-item dropdown has-megamenu">
               <a class="nav-link dropdown-tog position-relative" href="#" data-bs-toggle="dropdown"> <span> Learning
-                Products</span> <span><img src="img/chevron-down.svg" alt=""></span></a>
-              <div class="dropdown-menu shadow-sm rounded-bottom megamenu" role="menu">
-                <ul class="d-flex justify-content-center  subdropdown pe-5">
+                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span></a>
+              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                <ul class="d-flex justify-content-center  subdropdown pe-md-5">
                   <li>Joint Certification ( 2, 3, 4 Years )</li>
                   <li>Job Ready Certification ( 5 - 6 Months )</li>
-      
                 </ul>
-              </div> 
+              </div>
               <!-- dropdown-mega-menu.// -->
             </li>
-
             <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
             <li class="nav-item"><a class="nav-link" href="#"> Blog </a></li>
             <li class="nav-item dropdown rounded-bottom has-megamenu">
-              <a class="nav-link dropdown-togge position-relative joinCourse" href="#" data-bs-toggle="dropdown"> <span >Join Courses</span> </a>
-              <div class="dropdown-menu shadow-sm megamenu" role="menu">
-                <ul class="d-flex justify-content-between subdropdown3 ps-0 ">
+              <a class="nav-link dropdown-togge position-relative joinCourse" href="#" data-bs-toggle="dropdown">
+                <span>Join Courses</span> </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <ul class="d-flex justify-content-md-between subdropdown3 ps-0 ">
                   <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>AI and ML (11)</span>
-                       </a>
-                    
-                      
-                    <div class="dropdown-menu shadow-sm rounded-bottom megamenu" role="menu">
+                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>AI
+                        and ML (11)</span>
+                    </a>
+                    <div class="dropdown-menu rounded-bottom megamenu dropdown-last" role="menu">
                       <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-12 align-items-center justify-content-between d-block d-md-none d-flex">
+                          <p>AI and Ml</p>
+                          <span></span>
+                        </div>
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
 
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-6 col-md-2">
                           <div class="headDiv p-3 rounded">
                             <img src="img/headlogo2.png" alt="">
                             <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
                           </div>
                         </div>
                       
                       </div>
                     </div> 
-                    <!-- dropdown-mega-menu.// -->
+                      <!-- dropdown-mega-menu.// -->
                   </li>
-
-
                   <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>Data Science (5)</span>
-                       </a>
-                    
-                      
+                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>Data
+                        Science (5)</span>
+                    </a>
                     <!-- <div class="dropdown-menu rounded-bottom megamenu" role="menu">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-
-                        <div class="col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">Apply for B.Tech</a>
-                            <p>Duration - 4 Years</p>
-                          </div>
-                        </div>
-                  
-                    
-                    </div> 
-                    </div> -->
+    <div class="row">
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    </div>
+    </div> -->
                     <!-- dropdown-mega-menu.// -->
                   </li>
-
-                  
-                  
-                  
                   <li><span>Full Stack Development (3)</span></li>
                   <li><span>Blockchain (2)</span></li>
                   <li><span>Cybersecurity (1)</span></li>
@@ -275,16 +294,12 @@
           </ul>
           <ul class="navbar-nav ms-auto me-4">
             <li class="nav-item"><a type="button" class="nav-link btnStudent" href="#"> For Students </a></li>
-
           </ul>
         </div>
-
         <!-- navbar-collapse.// -->
       </div> <!-- container-fluid.// -->
     </nav>
     <!-- ============= COMPONENT END// ============== -->
-
-
   </header>
 
 
@@ -313,8 +328,8 @@
           <div class="row p-3">
             <div class="col-6 col-md-3 border-end">
               <div class="d-flex justify-content-center ">
-               
-                <img src="img/Universities.png"  alt="">
+
+                <img src="img/Universities.png" alt="">
 
                 <div class="mt-2">
                   <h6 class="mb-0">280+</h6>
@@ -325,9 +340,9 @@
             </div>
             <div class="col-6 col-md-3 border-end">
               <div class="d-flex justify-content-center">
-                
-                  <img src="img/Professors.png" alt="">
-                
+
+                <img src="img/Professors.png" alt="">
+
 
                 <div class="mt-2">
 
@@ -339,9 +354,9 @@
             </div>
             <div class="col-6 col-md-3 border-end">
               <div class="d-flex justify-content-center">
-                
-                  <img src="img/Students.png" alt="">
-                
+
+                <img src="img/Students.png" alt="">
+
 
                 <div class="mt-2">
 
@@ -353,9 +368,9 @@
             </div>
             <div class="col-6 col-md-3">
               <div class="d-flex justify-content-center">
-                
-                  <img src="img/Learning Minutes.png" alt="">
-               
+
+                <img src="img/Learning Minutes.png" alt="">
+
 
                 <div class="mt-2">
 
@@ -537,7 +552,7 @@
                 </div>
 
                 <button type="button" class="btn cardBtn float-end"><span>Learn More <img class=""
-                    src="img/arrow-right (4).svg" alt=""></span></button>
+                      src="img/arrow-right (4).svg" alt=""></span></button>
 
               </div>
               <div class="item" data-hash="two">
@@ -583,7 +598,7 @@
                 </div>
 
                 <button type="button" class="btn cardBtn float-end"><span>Learn More <img class=""
-                     src="img/arrow-right (4).svg" alt=""></span></button>
+                      src="img/arrow-right (4).svg" alt=""></span></button>
 
               </div>
               <div class="item" data-hash="three">
@@ -675,7 +690,7 @@
                 </div>
 
                 <button type="button" class="btn cardBtn float-end"><span>Learn More <img class=""
-                       src="img/arrow-right (4).svg" alt=""></span></button>
+                      src="img/arrow-right (4).svg" alt=""></span></button>
 
               </div>
               <div class="item" data-hash="five">
@@ -721,7 +736,7 @@
                 </div>
 
                 <button type="button" class="btn cardBtn float-end"><span>Learn More
-                      <img src="img/arrow-right (4).svg" alt=""></span></button>
+                    <img src="img/arrow-right (4).svg" alt=""></span></button>
 
               </div>
 
@@ -824,15 +839,15 @@
           URLhashListener: false,
           autoplayHoverPause: true,
           startPosition: '1',
-          slideTransition:'linear',
+          slideTransition: 'linear',
           smartSpeed: 400,
           animateIn: 'linear',
           animateOut: 'linear',
-          
+
           responsive: {
             0: {
               items: 1,
-              margin:10,
+              margin: 10,
               stagePadding: 50,
               URLhashListener: true,
               smartSpeed: 400,
@@ -849,7 +864,7 @@
             }
           }
 
-          
+
         });
 
         $('.owl-two').owlCarousel({
@@ -864,7 +879,7 @@
           smartSpeed: 1500,
           animateIn: 'linear',
           animateOut: 'linear',
-          
+
           responsive: {
             0: {
               items: 3
@@ -1124,77 +1139,82 @@
 
   <!-- ========== footer start ========== -->
 
-    <footer class="text-white pt-5 pb-5 ">
-      <div class="container pt-5">
-        <div class="row">
-          <div class="col-md-3">
+  <footer class="text-white pt-5 pb-5 ">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-3">
 
-            <div class="firstDiv">
-              <div class="imgFooter">
-                <img src="img/Upgradfootergrey.png" class="imgGrey w-50 me-4" alt="">
-                <img src="img/Upgradfooter.png" class="imgRed w-50 me-4" alt="" alt="">
+          <div class="firstDiv">
+            <div class="imgFooter">
+              <img src="img/Upgradfootergrey.png" class="imgGrey w-50 me-4" alt="">
+              <img src="img/Upgradfooter.png" class="imgRed w-50 me-4" alt="" alt="">
+            </div>
+            <ul class="d-flex ps-0 pt-3">
+              <li class="ms-0"> <a target="_blank" href="https://www.linkedin.com/company/upgrad-campus/"><img
+                    src="img/social-logo2.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"><img
+                    src="img/social-logo3.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.instagram.com/upgradcampus/"><img
+                    src="img/social-logo4.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.facebook.com/upgradcampus/"><img
+                    src="img/social-logo5.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://twitter.com/upgrad_campus"><img
+                    src="img/social-logo6.svg" width="18" alt=""></a></li>
+            </ul>
+
+            <p>@ 2022 UpGrad Campus Private Limited</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-2">
+          <div class="secondDiv">
+            <ul class="ps-0">
+              <li><a href="">Home</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Term of Use</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+          <div class="secondDiv">
+            <ul class="ps-0">
+              <li><a href="#">Lecture Capture System</a></li>
+              <li><a href="#">Blended Classroom</a></li>
+              <li><a href="">Live Classroom</a></li>
+              <li><a href="">Joint Certification (2-4) Years</a></li>
+              <li><a href="">Job Ready Certification (5-6) Months</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <div class="form">
+            <h6>Newsletter subscription.</h6>
+            <form action="" method="post">
+              <div class="d-flex">
+                <input type="text" class="form-control" placeholder="Email address">
+                <button type="submit" class="btn">Send</button>
+
               </div>
-              <ul class="d-flex ps-0 pt-3">
-                <li class="ms-0"> <a target="_blank" href="https://www.linkedin.com/company/upgrad-campus/"><img src="img/social-logo2.svg" width="18" alt=""></a></li>
-                <li class="ms-4"> <a target="_blank" href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"><img src="img/social-logo3.svg" width="18" alt=""></a></li>
-                <li class="ms-4"> <a target="_blank" href="https://www.instagram.com/upgradcampus/"><img src="img/social-logo4.svg" width="18" alt=""></a></li>
-                <li class="ms-4"> <a target="_blank" href="https://www.facebook.com/upgradcampus/"><img src="img/social-logo5.svg" width="18" alt=""></a></li>
-                <li class="ms-4"> <a target="_blank" href="https://twitter.com/upgrad_campus"><img src="img/social-logo6.svg" width="18" alt=""></a></li>
-              </ul>
 
-              <p>@ 2022 UpGrad Campus Private Limited</p>
-            </div>
-
-          </div>
-
-          <div class="col-md-2">
-            <div class="secondDiv">
-              <ul class="ps-0">
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Term of Use</a></li>
-                <li><a href="">Privacy Policy</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-3">
-            <div class="secondDiv">
-              <ul class="ps-0">
-                <li><a href="#">Lecture Capture System</a></li>
-                <li><a href="#">Blended Classroom</a></li>
-                <li><a href="">Live Classroom</a></li>
-                <li><a href="">Joint Certification (2-4) Years</a></li>
-                <li><a href="">Job Ready Certification (5-6) Months</a></li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="col-md-4">
-            <div class="form">
-              <h6>Newsletter subscription.</h6>
-              <form action="" method="post">
-                <div class="d-flex">
-                  <input type="text" class="form-control" placeholder="Email address">
-                  <button type="submit" class="btn">Send</button>
-
-                </div>
-
-              </form>
-
-            </div>
+            </form>
 
           </div>
 
         </div>
 
       </div>
-    </footer>
+
+    </div>
+  </footer>
 
   <!-- ========== footer end ========== -->
 

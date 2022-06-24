@@ -3,7 +3,8 @@ const navbarMenu = document.querySelector('header .navbar-collapse');
 const overlay = document.querySelector('header .overlay');
 const body = document.querySelector('body');
 const limenu = document.querySelectorAll('header .navbar-nav li');
-
+const closeLast = document.querySelectorAll('.dropdown-last .col-md-12 > p + span');
+console.log(hamberger);
 // on scroll navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -34,8 +35,8 @@ hamberger.addEventListener('click',()=>
 {
     if(!navbarMenu.classList.contains('show'))
     {
-      overlay.classList.add('active');
-      body.style.overflow="hidden";
+      overlay.classList.toggle('active');
+      body.classList.toggle('overflow');
     }
 })
 
@@ -48,6 +49,19 @@ overlay.addEventListener('click',()=>
     body.style.overflow="auto";
   }
 })
+
+// close Last
+closeLast.forEach(elem => {
+  elem.addEventListener('click',(e)=>
+  {
+    let closestLast = e.target.closest('.dropdown-last');
+    if(closestLast.classList.contains('show'))
+    {
+      closestLast.classList.remove('show');
+    }
+  })
+});
+
 
 // limenu.forEach(elem => {
 //   elem.addEventListener('click',(e)=>

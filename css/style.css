@@ -3611,7 +3611,7 @@ footer .form button {
 
 
 
-
+/* ==== zeeshan header css responsive==== */
 @media(min-width:991px)
 {
   .ms-md-auto
@@ -3663,9 +3663,10 @@ footer .form button {
     max-height: 90vh;
     margin-top: 10px;
     text-align: center;    
+    overflow: visible;
   }
   .navbar .navbar-collapse ul li {
-    padding: 3px 10px;
+    padding: 3px 0px;
   }
   .navbar .navbar-collapse ul:first-child li:last-child
   {
@@ -3705,4 +3706,129 @@ footer .form button {
     border-bottom-left-radius: 13px !important;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   }
+  .navbar .megamenu
+  {
+    padding: 1rem 1rem 0;
+  }
+  .navbar .dropdown-menu
+  {
+    position: relative;
+  }
+  .dropdown-menu .subdropdown
+  {
+    font-size: 13px;
+    position: absolute;
+    top: 0px;
+    width: 94%;
+    padding: 0.7rem 0 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 3.06%;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 15%);
+  }
+  .dropdown-menu .subdropdown li
+  {
+    padding: 3px 10px;
+    margin-bottom: 0.4rem;
+  }
+  .dropdown-menu .subdropdown3 {
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 1rem 0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 15%);
+  }
+  .dropdown-menu .subdropdown3 li 
+  {
+    font-size: 13px;
+  }
+  /* .dropdown-menu .subdropdown3 :not(.dropdown)
+  {
+    margin-bottom: 3px;
+  } */
+  .subdropdown3 .dropdown-last
+  {
+    position: absolute;
+    top: -357px;
+    width: 100%;
+    z-index: 1000;
+    left: 0;
+    max-height: 100vh;
+    overflow: auto;
+    padding: 2rem 0.9rem 1rem;
+  }
+  .subdropdown3 .dropdown-last .col-md-12
+  {
+    padding: 0 0.8rem 1.8rem;
+  }
+  .subdropdown3 .dropdown-last .col-md-12 >p
+  {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  .subdropdown3 .dropdown-last .col-md-12 > p + span
+  {
+    background: url(../img/Close.png) no-repeat 95%;
+    height: 17px;
+    background-size: contain;
+    width: 40px;
+  }
+  .dropdown-last .headDiv {
+    margin-bottom: 1.2rem;
+  }
+  .dropdown-last .headDiv img
+  {
+    margin-bottom: 2px;
+  }
+  .dropdown-last .headDiv h6 {
+    font-size: 13px;
+  }
+  .dropdown-last .headDiv a {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 96%;
+    justify-content: space-between;
+  }
+  .dropdown-last .headDiv a span
+  {
+    background: url(../img/arrow-right-red.svg) no-repeat 0% 60%;
+    height: 15px;
+    background-size: contain;
+    width: 11px;
+    display: block;
+  }
+  .dropdown-last .headDiv p
+  {
+    color: #555555;
+    font-size: 13px;
+  }
+  .dropdown-last .headDiv p span
+  {
+    text-transform: uppercase;
+    color: #9c9ea7 !important;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+  header .w-100
+  {
+    flex-wrap: wrap;
+  }
 }
+
+/* ==== zeeshan end css header css responsive==== */
