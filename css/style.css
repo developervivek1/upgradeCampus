@@ -1164,7 +1164,11 @@ footer .form button {
 } */
 
 .videoSection{
-  padding-bottom: 3rem;
+  background-image: url(../img/Path.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 10rem;
+  background-position: top;
 }
 
 .videoSection video {
@@ -1201,6 +1205,8 @@ footer .form button {
 }
 
 }
+
+/* end 600px */
 
 
 
