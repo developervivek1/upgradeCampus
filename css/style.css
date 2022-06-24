@@ -1120,6 +1120,14 @@ footer .form button {
   transform: translate(-11%, -50%); */
 }
 
+.sliderDiv .owl-dots {
+  margin-top: 1rem;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 2rem;
+}
+
 /* tech product offerring */
 
 .techProduct .container{
