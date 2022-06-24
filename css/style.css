@@ -3523,8 +3523,14 @@ footer .form button {
 
 .techCard{
   overflow-x: scroll;
-
 }
+
+.techCard::-webkit-scrollbar,.NewAgeCard::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none; /* firefox */
+}
+
 
 .techCard .row{
   width: 245%;
