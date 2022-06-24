@@ -1089,10 +1089,10 @@ footer .form button {
   width: 237px !important;
 } */
 
-.owl-one .owl-stage-outer .owl-stage{
+/* .owl-one .owl-stage-outer .owl-stage{
   width: 2000px !important;
-  /* transform:none; */
-}
+  transform:none;
+} */
 
 
 /* .owl-one .owl-stage .owl-item.active{
