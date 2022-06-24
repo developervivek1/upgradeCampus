@@ -1,542 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container-fluid main-section">
-      <div class="row" style="align-items: center">
-        <div class="col-md-6">
-          <div class="">
-            <figcaption>
-              <h1>
-                Interactive Blended
-                <span style="color: #424143">Classrooms</span>
-              </h1>
-            </figcaption>
-            <img
-              src="img/Frame (3).svg"
-              style="width: 250.23px; height: 14.7px"
-            />
-            <p
-              style="padding-top: 40px; padding-bottom: 40px"
-              class="main-ptag"
-            >
-              upGrad Campus interactive blended classrooms enable educational
-              institutions to upgrade their conventional classroom by adding
-              features for conducting hassle-free and effective lectures using
-              our Lecture Capture Solution whereby students can attend live or
-              recorded lecture content anytime, anywhere across the globe.
-            </p>
-            <div class="button-holder">
-              <img
-                src="img/Frame (5).svg"
-                alt=""
-                width="30px"
-                height="49.24px"
-                style="padding-right: 10px"
-              />
-              <button class="button1">
-                Explore Our Product
-                <svg>
-                  <defs>
-                    <marker
-                      id="m"
-                      markerWidth="4"
-                      markerHeight="8"
-                      refX="0"
-                      refY="1"
-                      viewBox="0 0 1 2"
-                    >
-                      <polygon points="0,0 1,1 0,2" fill="white" />
-                    </marker>
-                  </defs>
-                  <line
-                    x1="0"
-                    y1="50%"
-                    x2="100%"
-                    y2="50%"
-                    stroke-width="2"
-                    marker-end="url(#m)"
-                    stroke="black"
-                  />
-                </svg>
-              </button>
 
-              <button class="button2">
-                Request a Demo <img src="img/Group 1544.svg" alt="" />
-              </button>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!--  -->
+
+  <header>
+    <div class="overlay"></div>
+    <!-- ============= COMPONENT ============== -->
+    <nav id="navbar"
+      class="navbar container navbar-expand-lg fixed-top border-0 navbar-white border rounded-bottom bg-white text-dark">
+      <div class="w-100 d-flex justify-content-between align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="ms-3 navbar-brand" href="#">
+          <img src="img/Upgrad Campus logo.png" width="100" alt="">
+        </a>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item "> <a class="nav-link position-relative show" href="#" data-bs-toggle="dropdown"
+                aria-expanded="true"><span>Home </span></a></li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-t position-relative" href="#" data-bs-toggle="dropdown"> <span>Technology
+                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span>
+              </a>
+              <!-- <center> <img src="img/Ellipse 56.svg" alt=""></center> -->
+              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                <ul class="d-flex justify-content-center pe-md-5 me-5 subdropdown">
+                  <li>Lecture Capture System</li>
+                  <li>Blended Classroom</li>
+                  <li>Live Classroom</li>
+                </ul>
+              </div>
+              <!-- dropdown-mega-menu.// -->
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-tog position-relative" href="#" data-bs-toggle="dropdown"> <span> Learning
+                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span></a>
+              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                <ul class="d-flex justify-content-center  subdropdown pe-md-5">
+                  <li>Joint Certification ( 2, 3, 4 Years )</li>
+                  <li>Job Ready Certification ( 5 - 6 Months )</li>
+                </ul>
+              </div>
+              <!-- dropdown-mega-menu.// -->
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
+            <li class="nav-item"><a class="nav-link" href="#"> Blog </a></li>
+            <li class="nav-item dropdown rounded-bottom has-megamenu">
+              <a class="nav-link dropdown-togge position-relative joinCourse" href="#" data-bs-toggle="dropdown">
+                <span>Join Courses</span> </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <ul class="d-flex justify-content-md-between subdropdown3 ps-0 ">
+                  <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>AI
+                        and ML (11)</span>
+                    </a>
+                    <div class="dropdown-menu rounded-bottom megamenu dropdown-last" role="menu">
+                      <div class="row">
+                        <div class="col-md-12 align-items-center justify-content-between d-block d-md-none d-flex">
+                          <p>AI and Ml</p>
+                          <span></span>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                          <div class="headDiv p-3 rounded">
+                            <img src="img/headlogo2.png" alt="">
+                            <h6 class="pt-2">WUD, Sonipat</h6>
+                            <a href="#">
+                              Apply for B.Tech
+                              <span></span>
+                            </a>
+                            <p><span>Duration</span> 4 Years</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- dropdown-mega-menu.// -->
+                  </li>
+                  <li class="nav-item dropdown has-megamenu">
+                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>Data
+                        Science (5)</span>
+                    </a>
+                    <!-- <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+    <div class="row">
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <div class="headDiv p-3 rounded">
+    <img src="img/headlogo.png" alt="">
+    <h6 class="pt-2">WUD, Sonipat</h6>
+    <a href="#">Apply for B.Tech</a>
+    <p>Duration - 4 Years</p>
+    </div>
+    </div>
+    </div>
+    </div> -->
+                    <!-- dropdown-mega-menu.// -->
+                  </li>
+                  <li><span>Full Stack Development (3)</span></li>
+                  <li><span>Blockchain (2)</span></li>
+                  <li><span>Cybersecurity (1)</span></li>
+                  <li><span>Digital Marketing (6)</span></li>
+                  <li><span>Business Analytics (4)</span></li>
+                </ul>
+              </div> <!-- dropdown-mega-menu.// -->
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto me-4">
+            <li class="nav-item"><a type="button" class="nav-link btnStudent" href="#"> For Students </a></li>
+          </ul>
+        </div>
+        <!-- navbar-collapse.// -->
+      </div> <!-- container-fluid.// -->
+    </nav>
+    <!-- ============= COMPONENT END// ============== -->
+  </header>
+  <!-- header end -->
+  <div class="container-fluid main-section">
+    <div class="row" style="align-items: center">
+      <div class="col-md-6">
+        <div class="">
+          <figcaption>
+            <h1>
+              Interactive Blended
+              <span style="color: #424143">Classrooms</span>
+            </h1>
+          </figcaption>
+          <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
+          <p style="padding-top: 40px; padding-bottom: 40px" class="main-ptag">
+            upGrad Campus interactive blended classrooms enable educational
+            institutions to upgrade their conventional classroom by adding
+            features for conducting hassle-free and effective lectures using
+            our Lecture Capture Solution whereby students can attend live or
+            recorded lecture content anytime, anywhere across the globe.
+          </p>
+          <div class="button-holder">
+            <img src="img/Frame (5).svg" alt="" width="30px" height="49.24px" style="padding-right: 10px" />
+            <button class="button1">
+              Explore Our Product
+              <svg>
+                <defs>
+                  <marker id="m" markerWidth="4" markerHeight="8" refX="0" refY="1" viewBox="0 0 1 2">
+                    <polygon points="0,0 1,1 0,2" fill="white" />
+                  </marker>
+                </defs>
+                <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="2" marker-end="url(#m)" stroke="black" />
+              </svg>
+            </button>
+
+            <button class="button2">
+              Request a Demo <img src="img/Group 1544.svg" alt="" />
+            </button>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-6">
-          <div class="position-relative" style="float: right">
-            <!-- Icon 3 -->
-            <div class="icon-3-main">
-              <div class="icon-box-3">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        class="icon-holder-2"
-                        src="img/Group 2443-cropped.svg"
-                        alt=""
-                        width="42px"
-                        height="41px;"
-                      />
-                    </td>
-                    <td>
-                      <p>Easy and Seamless Integration</p>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="icon-box-3-lines">
-                <img
-                  class="icon-outer-3"
-                  src="img/Frame (6).svg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!--  -->
-            <img
-              src="img/Edited - Interactive Blended Classrooms.jpg"
-              alt=""
-              width="720px"
-              height="480px"
-              class="img-fluid main-image"
-            />
-            <!-- Icon 1 -->
-            <div class="icon-box-1">
-              <center>
-                <img
-                  class="icon-holder-1"
-                  src="img/Group 2442-cropped.svg"
-                  alt=""
-                  width="46px"
-                  height="46px;"
-                />
-                <p>Multi-View Recordings</p>
-              </center>
-            </div>
-            <!-- Icon 2 -->
-            <div class="icon-box-2">
+      <div class="col-md-6">
+        <div class="position-relative" style="float: right">
+          <!-- Icon 3 -->
+          <div class="icon-3-main">
+            <div class="icon-box-3">
               <table>
                 <tr>
                   <td>
-                    <img
-                      class="icon-holder-2"
-                      src="img/Component 88 – 3.svg"
-                      alt=""
-                      width="46px"
-                      height="46px;"
-                    />
+                    <img class="icon-holder-2" src="img/Group 2443-cropped.svg" alt="" width="42px" height="41px;" />
                   </td>
                   <td>
-                    <p>Record complete classroom experience</p>
+                    <p>Easy and Seamless Integration</p>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="icon-box-2-lines">
-              <img
-                class="icon-outer-2"
-                src="img/Frame (6).svg"
-                alt=""
-              />
+            <div class="icon-box-3-lines">
+              <img class="icon-outer-3" src="img/Frame (6).svg" alt="" />
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid second-section">
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Group 2479.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-
-            <h4>Unified Content Platform</h4>
-            <p>
-              Upgrade your classroom to the state-of-the-art infrastructure with
-              our proven blended classroom solution which comprises both
-              recorded and live streaming hardware plus software solutions.
-            </p>
+          <!--  -->
+          <img src="img/Edited - Interactive Blended Classrooms.jpg" alt="" width="720px" height="480px"
+            class="img-fluid main-image" />
+          <!-- Icon 1 -->
+          <div class="icon-box-1">
+            <center>
+              <img class="icon-holder-1" src="img/Group 2442-cropped.svg" alt="" width="46px" height="46px;" />
+              <p>Multi-View Recordings</p>
+            </center>
           </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Group call.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-            <h4>Hybrid Live Streamingh</h4>
-            <p>
-              Students can listen to lectures from the classroom as well as from
-              their homes. Further, Teachers can effectively deliver lectures
-              live to the students using the platform's advanced hardware and
-              software features.
-            </p>
+          <!-- Icon 2 -->
+          <div class="icon-box-2">
+            <table>
+              <tr>
+                <td>
+                  <img class="icon-holder-2" src="img/Component 88 – 3.svg" alt="" width="46px" height="46px;" />
+                </td>
+                <td>
+                  <p>Record complete classroom experience</p>
+                </td>
+              </tr>
+            </table>
           </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Analytics.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-
-            <h4>Livestream Control and Analytics</h4>
-            <p>
-              Analytics features assist teachers in improving the teaching
-              approach by capturing a range of student data. Educators can
-              interact with and monitor the live stream audience by controlling
-              permissions on audio, video, and chat options.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Integration.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-            <h4>Seamless Integration</h4>
-            <p>
-              The blended classroom system is completely automated and can be
-              easily integrated with the College timetable, Moodle, Blackboard,
-              Canvas, D2L, and other various LMS platforms.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Advanced Features.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-            <h4>Latest Advanced Features</h4>
-            <p>
-              Features such as Advanced Search, Analytics, Bookmarks, Polls, and
-              Discussion Forums will help the students and teachers to actively
-              engage in the academic activities.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <div class="icon-box">
-            <img
-              class="icon-holder"
-              src="img/Group 2732.png"
-              alt=""
-              width="53px"
-              height="53px;"
-            />
-            <h4>Robust Security</h4>
-            <p>
-              The platform offers robust security via encryption of the videos
-              to keep your classroom recordings, sensitive information, or
-              private details safe and secure from unauthorized access.
-            </p>
+          <div class="icon-box-2-lines">
+            <img class="icon-outer-2" src="img/Frame (6).svg" alt="" />
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Second Seconds Ends -->
-    <div class="container-fluid third-section">
-      <center>
-        <figcaption>
-          <h1>Product <span style="color: #424143">Highlights</span></h1>
-        </figcaption>
-        <img
-          src="img/Frame (3).svg"
-          style="width: 250.23px; height: 14.7px"
-        />
-        <p>
-          We provide innovative video-enabled learning solution that drive
-          better outcomes for institutions
-        </p>
-      </center>
-      <!-- Row One -->
-      <div class="row" style="margin-top: 60px">
-        <div class="col-md-6 product-first product-first-2">
-          <div class="card card-first">
-            <img
-              class="card-img-top"
-              src="img/Mask Group 22-1.png"
-              alt="Card image cap"
-            />
+  <div class="container-fluid second-section">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Group 2479.png" alt="" width="53px" height="53px;" />
+
+          <h4>Unified Content Platform</h4>
+          <p>
+            Upgrade your classroom to the state-of-the-art infrastructure with
+            our proven blended classroom solution which comprises both
+            recorded and live streaming hardware plus software solutions.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Group call.png" alt="" width="53px" height="53px;" />
+          <h4>Hybrid Live Streamingh</h4>
+          <p>
+            Students can listen to lectures from the classroom as well as from
+            their homes. Further, Teachers can effectively deliver lectures
+            live to the students using the platform's advanced hardware and
+            software features.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Analytics.png" alt="" width="53px" height="53px;" />
+
+          <h4>Livestream Control and Analytics</h4>
+          <p>
+            Analytics features assist teachers in improving the teaching
+            approach by capturing a range of student data. Educators can
+            interact with and monitor the live stream audience by controlling
+            permissions on audio, video, and chat options.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Integration.png" alt="" width="53px" height="53px;" />
+          <h4>Seamless Integration</h4>
+          <p>
+            The blended classroom system is completely automated and can be
+            easily integrated with the College timetable, Moodle, Blackboard,
+            Canvas, D2L, and other various LMS platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Advanced Features.png" alt="" width="53px" height="53px;" />
+          <h4>Latest Advanced Features</h4>
+          <p>
+            Features such as Advanced Search, Analytics, Bookmarks, Polls, and
+            Discussion Forums will help the students and teachers to actively
+            engage in the academic activities.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="icon-box">
+          <img class="icon-holder" src="img/Group 2732.png" alt="" width="53px" height="53px;" />
+          <h4>Robust Security</h4>
+          <p>
+            The platform offers robust security via encryption of the videos
+            to keep your classroom recordings, sensitive information, or
+            private details safe and secure from unauthorized access.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Seconds Ends -->
+  <div class="container-fluid third-section">
+    <center>
+      <figcaption>
+        <h1>Product <span style="color: #424143">Highlights</span></h1>
+      </figcaption>
+      <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
+      <p>
+        We provide innovative video-enabled learning solution that drive
+        better outcomes for institutions
+      </p>
+    </center>
+    <!-- Row One -->
+    <div class="row" style="margin-top: 60px">
+      <div class="col-md-6 product-first product-first-2">
+        <div class="card card-first">
+          <img class="card-img-top" src="img/Mask Group 22-1.png" alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-text">Virtual Classroom</h5>
+            <ul>
+              <li>Automatically record complete classroom experience</li>
+              <li>
+                Multiple camera, multiple audio and screen share supported
+              </li>
+              <li>
+                Platform for collaborative learning, content sharing, advance
+                search and analytics
+              </li>
+              <li>
+                Seamless integration with Moodle, Blackboard, Canvas, D2L and
+                other LMSs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Row Two -->
+      <div class="col-md-6 product-second product-second-2">
+        <div class="">
+          <div class="card card-second">
+            <img class="card-img-top" src="img/Mask Group 22.png" alt="Card image cap" />
             <div class="card-body">
-              <h5 class="card-text">Virtual Classroom</h5>
+              <h5 class="card-text">VCMS</h5>
               <ul>
-                <li>Automatically record complete classroom experience</li>
+                <li>
+                  Enables professors to record, edit and publish course
+                  content before the lecture
+                </li>
                 <li>
                   Multiple camera, multiple audio and screen share supported
                 </li>
                 <li>
-                  Platform for collaborative learning, content sharing, advance
-                  search and analytics
+                  Platform for collaborative learning, content sharing,
+                  advance search and analytics
                 </li>
                 <li>
-                  Seamless integration with Moodle, Blackboard, Canvas, D2L and
-                  other LMSs
+                  Seamless integration with Moodle, Blackboard, Canvas, D2L
+                  and other LMSs
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <!-- Row Two -->
-        <div class="col-md-6 product-second product-second-2">
-          <div class="">
-            <div class="card card-second">
-              <img
-                class="card-img-top"
-                src="img/Mask Group 22.png"
-                alt="Card image cap"
-              />
-              <div class="card-body">
-                <h5 class="card-text">VCMS</h5>
-                <ul>
-                  <li>
-                    Enables professors to record, edit and publish course
-                    content before the lecture
-                  </li>
-                  <li>
-                    Multiple camera, multiple audio and screen share supported
-                  </li>
-                  <li>
-                    Platform for collaborative learning, content sharing,
-                    advance search and analytics
-                  </li>
-                  <li>
-                    Seamless integration with Moodle, Blackboard, Canvas, D2L
-                    and other LMSs
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Third Section Ends -->
+  <div class="container logo-section">
+    <center>
+      <figcaption>
+        <h1>Our <span style="color: #ee2c3c">Partners</span></h1>
+      </figcaption>
+      <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
+      <p>
+        upGrad Campus has partnered with various institutions to provide new
+        age technology solutions
+      </p>
+    </center>
+    <div class="row" style="padding-top: 60px">
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/Mask Group 32.png" alt="" width="93px" height="93px" />
+            <p>Shiv Nadar School, Noida</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/manipal.png" alt="" width="87px" height="89px" />
+            <p>Manipal Institute of Technology, Manipal</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/srm.png" alt="" width="85px" height="85px" />
+            <p>SRM University, Amaravati</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/mdi.png" alt="" width="90px" height="78px" />
+            <p>MDI Gurgaon</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/mepco.png" alt="" width="87px" height="87px" />
+            <p>Mepco Schlenk Engineering College, Sivakasi</p>
+          </center>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-6">
+        <div class="logo-image">
+          <center>
+            <img src="img/vibrant.png" alt="" width="92px" height="84px" />
+            <p>Vibrant Academy, Kota</p>
+          </center>
         </div>
       </div>
     </div>
-    <!-- Third Section Ends -->
-    <div class="container logo-section">
-      <center>
-        <figcaption>
-          <h1>Our <span style="color: #ee2c3c">Partners</span></h1>
-        </figcaption>
-        <img
-          src="img/Frame (3).svg"
-          style="width: 250.23px; height: 14.7px"
-        />
-        <p>
-          upGrad Campus has partnered with various institutions to provide new
-          age technology solutions
-        </p>
-      </center>
-      <div class="row" style="padding-top: 60px">
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/Mask Group 32.png"
-                alt=""
-                width="93px"
-                height="93px"
-              />
-              <p>Shiv Nadar School, Noida</p>
-            </center>
+  </div>
+
+
+  <!-- ========== footer start ========== -->
+
+  <footer class="text-white pt-5 pb-5 ">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-3">
+
+          <div class="firstDiv">
+            <div class="imgFooter">
+              <img src="img/Upgradfootergrey.png" class="imgGrey w-50 me-4" alt="">
+              <img src="img/Upgradfooter.png" class="imgRed w-50 me-4" alt="" alt="">
+            </div>
+            <ul class="d-flex ps-0 pt-3">
+              <li class="ms-0"> <a target="_blank" href="https://www.linkedin.com/company/upgrad-campus/"><img
+                    src="img/social-logo2.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"><img
+                    src="img/social-logo3.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.instagram.com/upgradcampus/"><img
+                    src="img/social-logo4.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://www.facebook.com/upgradcampus/"><img
+                    src="img/social-logo5.svg" width="18" alt=""></a></li>
+              <li class="ms-4"> <a target="_blank" href="https://twitter.com/upgrad_campus"><img
+                    src="img/social-logo6.svg" width="18" alt=""></a></li>
+            </ul>
+
+            <p>@ 2022 UpGrad Campus Private Limited</p>
           </div>
+
         </div>
 
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/manipal.png"
-                alt=""
-                width="87px"
-                height="89px"
-              />
-              <p>Manipal Institute of Technology, Manipal</p>
-            </center>
+        <div class="col-md-2">
+          <div class="secondDiv">
+            <ul class="ps-0">
+              <li><a href="">Home</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Term of Use</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+
           </div>
+
         </div>
 
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/srm.png"
-                alt=""
-                width="85px"
-                height="85px"
-              />
-              <p>SRM University, Amaravati</p>
-            </center>
+        <div class="col-md-3">
+          <div class="secondDiv">
+            <ul class="ps-0">
+              <li><a href="#">Lecture Capture System</a></li>
+              <li><a href="#">Blended Classroom</a></li>
+              <li><a href="">Live Classroom</a></li>
+              <li><a href="">Joint Certification (2-4) Years</a></li>
+              <li><a href="">Job Ready Certification (5-6) Months</a></li>
+            </ul>
+
           </div>
+
         </div>
 
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/mdi.png"
-                alt=""
-                width="90px"
-                height="78px"
-              />
-              <p>MDI Gurgaon</p>
-            </center>
+        <div class="col-md-4">
+          <div class="form">
+            <h6>Newsletter subscription.</h6>
+            <form action="" method="post">
+              <div class="d-flex">
+                <input type="text" class="form-control" placeholder="Email address">
+                <button type="submit" class="btn">Send</button>
+
+              </div>
+
+            </form>
+
           </div>
+
         </div>
 
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/mepco.png"
-                alt=""
-                width="87px"
-                height="87px"
-              />
-              <p>Mepco Schlenk Engineering College, Sivakasi</p>
-            </center>
-          </div>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-6">
-          <div class="logo-image">
-            <center>
-              <img
-                src="img/vibrant.png"
-                alt=""
-                width="92px"
-                height="84px"
-              />
-              <p>Vibrant Academy, Kota</p>
-            </center>
-          </div>
-        </div>
       </div>
+
     </div>
+  </footer>
 
+  <!-- ========== footer end ========== -->
 
-      <!-- ========== footer start ========== -->
+  <script src="js/script.js"></script>
+</body>
 
-      <footer class="text-white pt-5 pb-5 ">
-        <div class="container pt-5">
-          <div class="row">
-            <div class="col-md-3">
-  
-              <div class="firstDiv">
-                <div class="imgFooter">
-                  <img src="img/Upgradfootergrey.png" class="imgGrey w-50 me-4" alt="">
-                  <img src="img/Upgradfooter.png" class="imgRed w-50 me-4" alt="" alt="">
-                </div>
-                <ul class="d-flex ps-0 pt-3">
-                  <li class="ms-0"> <a target="_blank" href="https://www.linkedin.com/company/upgrad-campus/"><img src="img/social-logo2.svg" width="18" alt=""></a></li>
-                  <li class="ms-4"> <a target="_blank" href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"><img src="img/social-logo3.svg" width="18" alt=""></a></li>
-                  <li class="ms-4"> <a target="_blank" href="https://www.instagram.com/upgradcampus/"><img src="img/social-logo4.svg" width="18" alt=""></a></li>
-                  <li class="ms-4"> <a target="_blank" href="https://www.facebook.com/upgradcampus/"><img src="img/social-logo5.svg" width="18" alt=""></a></li>
-                  <li class="ms-4"> <a target="_blank" href="https://twitter.com/upgrad_campus"><img src="img/social-logo6.svg" width="18" alt=""></a></li>
-                </ul>
-  
-                <p>@ 2022 UpGrad Campus Private Limited</p>
-              </div>
-  
-            </div>
-  
-            <div class="col-md-2">
-              <div class="secondDiv">
-                <ul class="ps-0">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Contact</a></li>
-                  <li><a href="">Blog</a></li>
-                  <li><a href="">Term of Use</a></li>
-                  <li><a href="">Privacy Policy</a></li>
-                </ul>
-  
-              </div>
-  
-            </div>
-  
-            <div class="col-md-3">
-              <div class="secondDiv">
-                <ul class="ps-0">
-                  <li><a href="#">Lecture Capture System</a></li>
-                  <li><a href="#">Blended Classroom</a></li>
-                  <li><a href="">Live Classroom</a></li>
-                  <li><a href="">Joint Certification (2-4) Years</a></li>
-                  <li><a href="">Job Ready Certification (5-6) Months</a></li>
-                </ul>
-  
-              </div>
-  
-            </div>
-  
-            <div class="col-md-4">
-              <div class="form">
-                <h6>Newsletter subscription.</h6>
-                <form action="" method="post">
-                  <div class="d-flex">
-                    <input type="text" class="form-control" placeholder="Email address">
-                    <button type="submit" class="btn">Send</button>
-  
-                  </div>
-  
-                </form>
-  
-              </div>
-  
-            </div>
-  
-          </div>
-  
-        </div>
-      </footer>
-  
-    <!-- ========== footer end ========== -->
-  </body>
 </html>
