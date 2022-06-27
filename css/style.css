@@ -140,7 +140,7 @@ body{
   cursor: pointer;
 }
 
-.megamenu .subdropdown li:hover{
+.megamenu .subdropdown li:hover a{
   color: #EC2A3D;
 }
 
