@@ -596,6 +596,14 @@ box-shadow: 0px 10px 60px #262D7614;
     opacity: 1;
   }
 
+  .owl-two .owl-stage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
 
   .owl-theme .owl-dots .owl-dot span {
     width: 21px;
@@ -3717,6 +3725,20 @@ footer ul{
 }
 .bottomBox{
   bottom: -120px;
+}
+
+.bottomBox .border-end{
+  border: 0!important;
+}
+
+
+.bottomBox .border-end:last-child{
+  padding-top: 1rem;
+}
+
+.bottomBox .d-flex.justify-content-center {
+  display: block !important;
+  text-align: center;
 }
 
 
