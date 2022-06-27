@@ -630,7 +630,7 @@ box-shadow: 0px 10px 60px #262D7614;
  
   position: absolute;
   left: 11%;
-  top: 45%;
+  top: 43%;
   transform: translate(-11%, -50%);
 }
 
@@ -3533,7 +3533,7 @@ footer .form button {
 
 
 
-/* ============== reponsive mobile 600px=============== */
+/* ============== vivek reponsive mobile 600px=============== */
 
 @media (max-width:600px){
   /* .owl-stage-outer .owl-stage{
@@ -3647,7 +3647,7 @@ footer .form button {
 } */
 
 .videoSection{
-  background-image: url(../img/Path.svg);
+  background-image: url(../img/mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 10rem;
@@ -3679,9 +3679,10 @@ footer .form button {
 
 .videoText button {
   margin-top: 0rem;
-  width: 155px;
+  width: 184px;
   height: 40px;
-  font-size: 10px;
+  padding-top: 10px;
+  font-size: 12px;
 }
 .bottomBox{
   bottom: -120px;
