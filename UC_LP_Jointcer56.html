@@ -1,468 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!--  -->
 
-<body>
+    <header>
+      <div class="overlay"></div>
+      <!-- ============= COMPONENT ============== -->
+      <nav
+        id="navbar"
+        class="navbar container navbar-expand-lg fixed-top border-0 navbar-white border rounded-bottom bg-white text-dark"
+      >
+        <div class="w-100 d-flex justify-content-between align-items-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main_nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="ms-3 navbar-brand" href="index.html">
+            <img src="img/Upgrad Campus logo.png" width="100" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav ms-md-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link position-relative show"
+                  href="index.html"
+                  aria-expanded="true"
+                  ><span>Home </span></a
+                >
+              </li>
+              <li class="nav-item dropdown has-megamenu">
+                <a
+                  class="nav-link dropdown-t position-relative"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <span>Technology Products</span>
+                  <span><img src="img/chevron-down.svg" alt="" /></span>
+                </a>
+                <!-- <center> <img src="img/Ellipse 56.svg" alt=""></center> -->
+                <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                  <ul
+                    class="d-flex justify-content-center pe-md-5 me-5 subdropdown"
+                  >
+                    <li>
+                      <a href="LectureCaptureSystem.html">
+                        Lecture Capture System</a
+                      >
+                    </li>
+                    <li>
+                      <a href="UC_TP_Blended_Classrom.html">
+                        Blended Classroom</a
+                      >
+                    </li>
+                    <li>
+                      <a href="UC_TP_Live_Classrom.html"> Live Classroom</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- dropdown-mega-menu.// -->
+              </li>
+              <li class="nav-item dropdown has-megamenu">
+                <a
+                  class="nav-link dropdown-tog position-relative"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <span> Learning Products</span>
+                  <span><img src="img/chevron-down.svg" alt="" /></span
+                ></a>
+                <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+                  <ul class="d-flex justify-content-center subdropdown pe-md-5">
+                    <li>
+                      <a href="UC_LP_Joint-cer-2.html">
+                        Joint Certification ( 2, 3, 4 Years )</a
+                      >
+                    </li>
+                    <li>
+                      <a href="UC_LP_Jointcer56.html">
+                        Job Ready Certification ( 5 - 6 Months )</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- dropdown-mega-menu.// -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"> Contact </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-page.html"> Blog </a>
+              </li>
+              <li class="nav-item dropdown rounded-bottom has-megamenu">
+                <a
+                  class="nav-link dropdown-togge position-relative joinCourse"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                >
+                  <span>Join Courses</span>
+                </a>
+                <div class="dropdown-menu megamenu" role="menu">
+                  <ul
+                    class="d-flex justify-content-md-between subdropdown3 ps-0"
+                  >
+                    <li class="nav-item dropdown has-megamenu">
+                      <a
+                        class="nav-link dropdown-t position-relative pt-0"
+                        href="#"
+                        data-bs-toggle="dropdown"
+                      >
+                        <span>AI and ML (11)</span>
+                      </a>
+                      <div
+                        class="dropdown-menu rounded-bottom megamenu dropdown-last"
+                        role="menu"
+                      >
+                        <div class="row">
+                          <div
+                            class="col-md-12 align-items-center justify-content-between d-block d-md-none d-flex"
+                          >
+                            <p>AI and Ml</p>
+                            <span></span>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
 
-  <!--  -->
-
-  <header>
-    <div class="overlay"></div>
-    <!-- ============= COMPONENT ============== -->
-    <nav id="navbar"
-      class="navbar container navbar-expand-lg fixed-top border-0 navbar-white border rounded-bottom bg-white text-dark">
-      <div class="w-100 d-flex justify-content-between align-items-center">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="ms-3 navbar-brand" href="#">
-          <img src="img/Upgrad Campus logo.png" width="100" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <ul class="navbar-nav ms-md-auto">
-            <li class="nav-item "> <a class="nav-link position-relative show" href="#" data-bs-toggle="dropdown"
-                aria-expanded="true"><span>Home </span></a></li>
-            <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-t position-relative" href="#" data-bs-toggle="dropdown"> <span>Technology
-                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span>
-              </a>
-              <!-- <center> <img src="img/Ellipse 56.svg" alt=""></center> -->
-              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
-                <ul class="d-flex justify-content-center pe-md-5 me-5 subdropdown">
-                  <li>Lecture Capture System</li>
-                  <li>Blended Classroom</li>
-                  <li>Live Classroom</li>
-                </ul>
-              </div>
-              <!-- dropdown-mega-menu.// -->
-            </li>
-            <li class="nav-item dropdown has-megamenu">
-              <a class="nav-link dropdown-tog position-relative" href="#" data-bs-toggle="dropdown"> <span> Learning
-                  Products</span> <span><img src="img/chevron-down.svg" alt=""></span></a>
-              <div class="dropdown-menu rounded-bottom megamenu" role="menu">
-                <ul class="d-flex justify-content-center  subdropdown pe-md-5">
-                  <li>Joint Certification ( 2, 3, 4 Years )</li>
-                  <li>Job Ready Certification ( 5 - 6 Months )</li>
-                </ul>
-              </div>
-              <!-- dropdown-mega-menu.// -->
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
-            <li class="nav-item"><a class="nav-link" href="#"> Blog </a></li>
-            <li class="nav-item dropdown rounded-bottom has-megamenu">
-              <a class="nav-link dropdown-togge position-relative joinCourse" href="#" data-bs-toggle="dropdown">
-                <span>Join Courses</span> </a>
-              <div class="dropdown-menu megamenu" role="menu">
-                <ul class="d-flex justify-content-md-between subdropdown3 ps-0 ">
-                  <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>AI
-                        and ML (11)</span>
-                    </a>
-                    <div class="dropdown-menu rounded-bottom megamenu dropdown-last" role="menu">
-                      <div class="row">
-                        <div class="col-md-12 align-items-center justify-content-between d-block d-md-none d-flex">
-                          <p>AI and Ml</p>
-                          <span></span>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-2">
+                            <div class="headDiv p-3 rounded">
+                              <img src="img/headlogo2.png" alt="" />
+                              <h6 class="pt-2">WUD, Sonipat</h6>
+                              <a href="#">
+                                Apply for B.Tech
+                                <span></span>
+                              </a>
+                              <p><span>Duration</span> 4 Years</p>
+                            </div>
                           </div>
                         </div>
-
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-                        <div class="col-6 col-md-2">
-                          <div class="headDiv p-3 rounded">
-                            <img src="img/headlogo2.png" alt="">
-                            <h6 class="pt-2">WUD, Sonipat</h6>
-                            <a href="#">
-                              Apply for B.Tech
-                              <span></span>
-                            </a>
-                            <p><span>Duration</span> 4 Years</p>
-                          </div>
-                        </div>
-
                       </div>
-                    </div>
-                    <!-- dropdown-mega-menu.// -->
-                  </li>
-                  <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link dropdown-t position-relative pt-0" href="#" data-bs-toggle="dropdown"> <span>Data
-                        Science (5)</span>
-                    </a>
-                    <!-- <div class="dropdown-menu rounded-bottom megamenu" role="menu">
-    <div class="row">
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    <div class="col-md-2">
-    <div class="headDiv p-3 rounded">
-    <img src="img/headlogo.png" alt="">
-    <h6 class="pt-2">WUD, Sonipat</h6>
-    <a href="#">Apply for B.Tech</a>
-    <p>Duration - 4 Years</p>
-    </div>
-    </div>
-    </div>
-    </div> -->
-                    <!-- dropdown-mega-menu.// -->
-                  </li>
-                  <li><span>Full Stack Development (3)</span></li>
-                  <li><span>Blockchain (2)</span></li>
-                  <li><span>Cybersecurity (1)</span></li>
-                  <li><span>Digital Marketing (6)</span></li>
-                  <li><span>Business Analytics (4)</span></li>
-                </ul>
-              </div> <!-- dropdown-mega-menu.// -->
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto me-4">
-            <li class="nav-item"><a type="button" class="nav-link btnStudent" href="#"> For Students </a></li>
-          </ul>
+                      <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                      <a
+                        class="nav-link dropdown-t position-relative pt-0"
+                        href="#"
+                        data-bs-toggle="dropdown"
+                      >
+                        <span>Data Science (5)</span>
+                      </a>
+                      <!-- <div class="dropdown-menu rounded-bottom megamenu" role="menu">
+  <div class="row">
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  <div class="col-md-2">
+  <div class="headDiv p-3 rounded">
+  <img src="img/headlogo.png" alt="">
+  <h6 class="pt-2">WUD, Sonipat</h6>
+  <a href="#">Apply for B.Tech</a>
+  <p>Duration - 4 Years</p>
+  </div>
+  </div>
+  </div>
+  </div> -->
+                      <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li><span>Full Stack Development (3)</span></li>
+                    <li><span>Blockchain (2)</span></li>
+                    <li><span>Cybersecurity (1)</span></li>
+                    <li><span>Digital Marketing (6)</span></li>
+                    <li><span>Business Analytics (4)</span></li>
+                  </ul>
+                </div>
+                <!-- dropdown-mega-menu.// -->
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto me-4">
+              <li class="nav-item">
+                <a type="button" class="nav-link btnStudent" href="#">
+                  For Students
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- navbar-collapse.// -->
         </div>
-        <!-- navbar-collapse.// -->
-      </div> <!-- container-fluid.// -->
-    </nav>
-    <!-- ============= COMPONENT END// ============== -->
-  </header>
-  <!-- header end -->
-  <div class="container-fluid main-section">
-    <div class="row" style="align-items: center">
-      <div class="col-md-6">
-        <div class="">
-          <figcaption>
-            <h1>
-              Job Ready
-              <span style="color: #424143">Certification Program</span>
-            </h1>
-          </figcaption>
-          <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
-          <p style="padding-top: 40px; padding-bottom: 40px" class="main-ptag">
-            We offer a turnkey Lecture Capture Solution that enables automatic
-            audio-video recording and distribution of classroom lectures
-            stored on the cloud, so that students can access them anytime,
-            from anywhere, on any device. This innovative learning solution
-            drives better outcomes for educational institutions.
-          </p>
-          <div class="button-holder">
-            <img src="img/Frame (5).svg" alt="" width="30px" height="49.24px" style="padding-right: 10px" />
-            <button class="button1">
-              Explore Our Product
-              <svg>
-                <defs>
-                  <marker id="m" markerWidth="4" markerHeight="8" refX="0" refY="1" viewBox="0 0 1 2">
-                    <polygon points="0,0 1,1 0,2" fill="white" />
-                  </marker>
-                </defs>
-                <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="2" marker-end="url(#m)" stroke="black" />
-              </svg>
-            </button>
+        <!-- container-fluid.// -->
+      </nav>
+      <!-- ============= COMPONENT END// ============== -->
+    </header>
+    <!-- header end -->
+    <div class="container-fluid main-section">
+      <div class="row" style="align-items: center">
+        <div class="col-md-6">
+          <div class="">
+            <figcaption>
+              <h1>
+                Job Ready
+                <span style="color: #424143">Certification Program</span>
+              </h1>
+            </figcaption>
+            <img
+              src="img/Frame (3).svg"
+              style="width: 250.23px; height: 14.7px"
+            />
+            <p
+              style="padding-top: 40px; padding-bottom: 40px"
+              class="main-ptag"
+            >
+              We offer a turnkey Lecture Capture Solution that enables automatic
+              audio-video recording and distribution of classroom lectures
+              stored on the cloud, so that students can access them anytime,
+              from anywhere, on any device. This innovative learning solution
+              drives better outcomes for educational institutions.
+            </p>
+            <div class="button-holder">
+              <img
+                src="img/Frame (5).svg"
+                alt=""
+                width="30px"
+                height="49.24px"
+                style="padding-right: 10px"
+              />
+              <button class="button1">
+                Explore Our Product
+                <svg>
+                  <defs>
+                    <marker
+                      id="m"
+                      markerWidth="4"
+                      markerHeight="8"
+                      refX="0"
+                      refY="1"
+                      viewBox="0 0 1 2"
+                    >
+                      <polygon points="0,0 1,1 0,2" fill="white" />
+                    </marker>
+                  </defs>
+                  <line
+                    x1="0"
+                    y1="50%"
+                    x2="100%"
+                    y2="50%"
+                    stroke-width="2"
+                    marker-end="url(#m)"
+                    stroke="black"
+                  />
+                </svg>
+              </button>
 
-            <button class="button2">
-              Request a Demo <img src="img/Group 1544.svg" alt="" />
-            </button>
+              <button class="button2">
+                Request a Demo <img src="img/Group 1544.svg" alt="" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="position-relative" style="float: right">
-          <!-- Icon 3 -->
-          <div class="icon-3-main">
-            <div class="icon-box-3">
+        <div class="col-md-6">
+          <div class="position-relative" style="float: right">
+            <!-- Icon 3 -->
+            <div class="icon-3-main">
+              <div class="icon-box-3">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        class="icon-holder-2"
+                        src="img/Group 2443-cropped.svg"
+                        alt=""
+                        width="42px"
+                        height="41px;"
+                      />
+                    </td>
+                    <td>
+                      <p>Easy and Seamless Integration</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="icon-box-3-lines">
+                <img class="icon-outer-3" src="img/Frame (6).svg" alt="" />
+              </div>
+            </div>
+            <!--  -->
+            <img
+              src="img/Edited - Job Ready Certification Program.jpg"
+              alt=""
+              width="720px"
+              height="480px"
+              class="img-fluid main-image"
+            />
+            <!-- Icon 1 -->
+            <div class="icon-box-1">
+              <center>
+                <img
+                  class="icon-holder-1"
+                  src="img/Group 2442-cropped.svg"
+                  alt=""
+                  width="46px"
+                  height="46px;"
+                />
+                <p>Multi-View Recordings</p>
+              </center>
+            </div>
+            <!-- Icon 2 -->
+            <div class="icon-box-2">
               <table>
                 <tr>
                   <td>
-                    <img class="icon-holder-2" src="img/Group 2443-cropped.svg" alt="" width="42px" height="41px;" />
+                    <img
+                      class="icon-holder-2"
+                      src="img/Component 88 – 3.svg"
+                      alt=""
+                      width="46px"
+                      height="46px;"
+                    />
                   </td>
                   <td>
-                    <p>Easy and Seamless Integration</p>
+                    <p>Record complete classroom experience</p>
                   </td>
                 </tr>
               </table>
             </div>
-            <div class="icon-box-3-lines">
-              <img class="icon-outer-3" src="img/Frame (6).svg" alt="" />
+            <div class="icon-box-2-lines">
+              <img class="icon-outer-2" src="img/Frame (6).svg" alt="" />
             </div>
           </div>
-          <!--  -->
-          <img src="img/Edited - Job Ready Certification Program.jpg" alt="" width="720px" height="480px"
-            class="img-fluid main-image" />
-          <!-- Icon 1 -->
-          <div class="icon-box-1">
-            <center>
-              <img class="icon-holder-1" src="img/Group 2442-cropped.svg" alt="" width="46px" height="46px;" />
-              <p>Multi-View Recordings</p>
-            </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid second-section">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Skill.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+
+            <h4>Identifying Skill Gap</h4>
+            <p>
+              Skill gaps are the primary reason students face employment issues.
+              The program will help conquer your student's skill gaps and equip
+              them with the most in-demand skills for a rapidly changing job
+              market.
+            </p>
           </div>
-          <!-- Icon 2 -->
-          <div class="icon-box-2">
-            <table>
-              <tr>
-                <td>
-                  <img class="icon-holder-2" src="img/Component 88 – 3.svg" alt="" width="46px" height="46px;" />
-                </td>
-                <td>
-                  <p>Record complete classroom experience</p>
-                </td>
-              </tr>
-            </table>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Support.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+            <h4>Outcome-Based Learning</h4>
+            <p>
+              Our program is goal-oriented and designed with excellent outcomes
+              in mind. You can be assured knowing that the program outcomes will
+              successfully bridge your student's skill gap to their dream job.
+            </p>
           </div>
-          <div class="icon-box-2-lines">
-            <img class="icon-outer-2" src="img/Frame (6).svg" alt="" />
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Analytics.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+
+            <h4>Mentoring By Experts</h4>
+            <p>
+              Students get a personalized mentorship opportunity with an
+              industry expert who can guide them throughout the program and give
+              them the best advice for navigating their careers.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Notification.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+            <h4>Powerful Analytics</h4>
+            <p>
+              Every course, class, and student is distinct. That is why we have
+              designed a set of versatile reporting tools that let you assess
+              what matters the most to you while giving you the information you
+              need to change teaching tactics and remediation successfully.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Group call.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+            <h4>Implementing Acquired Skills</h4>
+            <p>
+              Our services do not end with the Job Ready Certification Program.
+              Students need constant support and training to achieve their
+              career goals. With upGrad Campus, institutes will be connected to
+              relevant resources, so they can continue to upgrade themselves.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="icon-box">
+            <img
+              class="icon-holder"
+              src="img/Working.png"
+              alt=""
+              width="53px"
+              height="53px;"
+            />
+            <h4>Interactivity and Assessment</h4>
+            <p>
+              We know keeping students motivated in their learning journey is
+              easier said than done. Interactivity is the best way to enhance
+              engagement, we have the latest features such as live polls and
+              live chat to keep the students focused and engaged.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid second-section">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Skill.png" alt="" width="53px" height="53px;" />
-
-          <h4>Identifying Skill Gap</h4>
-          <p>
-            Skill gaps are the primary reason students face employment issues.
-            The program will help conquer your student's skill gaps and equip
-            them with the most in-demand skills for a rapidly changing job
-            market.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Support.png" alt="" width="53px" height="53px;" />
-          <h4>Outcome-Based Learning</h4>
-          <p>
-            Our program is goal-oriented and designed with excellent outcomes
-            in mind. You can be assured knowing that the program outcomes will
-            successfully bridge your student's skill gap to their dream job.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Analytics.png" alt="" width="53px" height="53px;" />
-
-          <h4>Mentoring By Experts</h4>
-          <p>
-            Students get a personalized mentorship opportunity with an
-            industry expert who can guide them throughout the program and give
-            them the best advice for navigating their careers.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Notification.png" alt="" width="53px" height="53px;" />
-          <h4>Powerful Analytics</h4>
-          <p>
-            Every course, class, and student is distinct. That is why we have
-            designed a set of versatile reporting tools that let you assess
-            what matters the most to you while giving you the information you
-            need to change teaching tactics and remediation successfully.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Group call.png" alt="" width="53px" height="53px;" />
-          <h4>Implementing Acquired Skills</h4>
-          <p>
-            Our services do not end with the Job Ready Certification Program.
-            Students need constant support and training to achieve their
-            career goals. With upGrad Campus, institutes will be connected to
-            relevant resources, so they can continue to upgrade themselves.
-          </p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="icon-box">
-          <img class="icon-holder" src="img/Working.png" alt="" width="53px" height="53px;" />
-          <h4>Interactivity and Assessment</h4>
-          <p>
-            We know keeping students motivated in their learning journey is
-            easier said than done. Interactivity is the best way to enhance
-            engagement, we have the latest features such as live polls and
-            live chat to keep the students focused and engaged.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Second Seconds Ends -->
-  <!-- <div class="container-fluid third-section">
+    <!-- Second Seconds Ends -->
+    <!-- <div class="container-fluid third-section">
       <center>
         <figcaption>
           <h1>Product <span style="color: #424143">Highlights</span></h1>
@@ -571,141 +735,184 @@
         </div>
       </div>
     </div> -->
-  <!-- Third Section Ends -->
-  <div class="container logo-section">
-    <center>
-      <figcaption>
-        <h1>Our <span style="color: #ee2c3c">Partners</span></h1>
-      </figcaption>
-      <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
-      <p>
-        upGrad Campus has partnered with various institutions to provide new
-        age technology solutions
-      </p>
-    </center>
-    <div class="row" style="padding-top: 60px">
-      <div class="col-md-3 col-sm-6 col-6">
-        <div class="logo-image">
-          <center>
-            <img src="img/xavier_logo.png" alt="" width="95px" height="92px" />
-            <p>St. Xavier's College, Jaipur</p>
-          </center>
+    <!-- Third Section Ends -->
+    <div class="container logo-section">
+      <center>
+        <figcaption>
+          <h1>Our <span style="color: #ee2c3c">Partners</span></h1>
+        </figcaption>
+        <img src="img/Frame (3).svg" style="width: 250.23px; height: 14.7px" />
+        <p>
+          upGrad Campus has partnered with various institutions to provide new
+          age technology solutions
+        </p>
+      </center>
+      <div class="row" style="padding-top: 60px">
+        <div class="col-md-3 col-sm-6 col-6">
+          <div class="logo-image">
+            <center>
+              <img
+                src="img/xavier_logo.png"
+                alt=""
+                width="95px"
+                height="92px"
+              />
+              <p>St. Xavier's College, Jaipur</p>
+            </center>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-3 col-sm-6 col-6">
-        <div class="logo-image">
-          <center>
-            <img src="img/OSGU_LOGO-2.png" alt="" width="71px" height="88px" />
-            <p>Om Sterling University, Hisar</p>
-          </center>
+        <div class="col-md-3 col-sm-6 col-6">
+          <div class="logo-image">
+            <center>
+              <img
+                src="img/OSGU_LOGO-2.png"
+                alt=""
+                width="71px"
+                height="88px"
+              />
+              <p>Om Sterling University, Hisar</p>
+            </center>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-3 col-sm-6 col-6">
-        <div class="logo-image">
-          <center>
-            <img src="img/Image 94.png" alt="" width="89px" height="104px" />
-            <p>SVIST, Kolkata</p>
-          </center>
+        <div class="col-md-3 col-sm-6 col-6">
+          <div class="logo-image">
+            <center>
+              <img src="img/Image 94.png" alt="" width="89px" height="104px" />
+              <p>SVIST, Kolkata</p>
+            </center>
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-3 col-sm-6 col-6">
-        <div class="logo-image">
-          <center>
-            <img src="img/kaziranga.png" alt="" width="70px" height="83px" />
-            <p>The Assam Kaziranga University, Koraikhowa</p>
-          </center>
+        <div class="col-md-3 col-sm-6 col-6">
+          <div class="logo-image">
+            <center>
+              <img src="img/kaziranga.png" alt="" width="70px" height="83px" />
+              <p>The Assam Kaziranga University, Koraikhowa</p>
+            </center>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- ========== footer start ========== -->
 
-  <!-- ========== footer start ========== -->
-
-  <footer class="text-white pt-5 pb-5 ">
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-md-3">
-
-          <div class="firstDiv">
-            <div class="imgFooter">
-              <img src="img/Upgradfootergrey.png" class="imgGrey w-50 me-4" alt="">
-              <img src="img/Upgradfooter.png" class="imgRed w-50 me-4" alt="" alt="">
-            </div>
-            <ul class="d-flex ps-0 pt-3">
-              <li class="ms-0"> <a target="_blank" href="https://www.linkedin.com/company/upgrad-campus/"><img
-                    src="img/social-logo2.svg" width="18" alt=""></a></li>
-              <li class="ms-4"> <a target="_blank" href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"><img
-                    src="img/social-logo3.svg" width="18" alt=""></a></li>
-              <li class="ms-4"> <a target="_blank" href="https://www.instagram.com/upgradcampus/"><img
-                    src="img/social-logo4.svg" width="18" alt=""></a></li>
-              <li class="ms-4"> <a target="_blank" href="https://www.facebook.com/upgradcampus/"><img
-                    src="img/social-logo5.svg" width="18" alt=""></a></li>
-              <li class="ms-4"> <a target="_blank" href="https://twitter.com/upgrad_campus"><img
-                    src="img/social-logo6.svg" width="18" alt=""></a></li>
-            </ul>
-
-            <p>@ 2022 UpGrad Campus Private Limited</p>
-          </div>
-
-        </div>
-
-        <div class="col-md-2">
-          <div class="secondDiv">
-            <ul class="ps-0">
-              <li><a href="/">Home</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="blog-page.html">Blog</a></li>
-              <li><a href="terms-of-use.html">Term of Use</a></li>
-              <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        
-        <div class="col-md-3">
-          <div class="secondDiv">
-            <ul class="ps-0">
-              <li><a href="LectureCaptureSystem.html">Lecture Capture System</a></li>
-              <li><a href="UC_TP_Blended_Classrom.html">Blended Classroom</a></li>
-              <li><a href="UC_TP_Live_Classrom.html">Live Classroom</a></li>
-              <li><a href="UC_LP_Joint-cer-2.html">Joint Certification (2-4) Years</a></li>
-              <li><a href="UC_LP_Jointcer56.html">Job Ready Certification (5-6) Months</a></li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-4">
-          <div class="form">
-            <h6>Newsletter subscription.</h6>
-            <form action="" method="post">
-              <div class="d-flex">
-                <input type="text" class="form-control" placeholder="Email address">
-                <button type="submit" class="btn">Send</button>
-
+    <footer class="text-white pt-5 pb-5">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="firstDiv">
+              <div class="imgFooter">
+                <img
+                  src="img/Upgradfootergrey.png"
+                  class="imgGrey w-50 me-4"
+                  alt=""
+                />
+                <img
+                  src="img/Upgradfooter.png"
+                  class="imgRed w-50 me-4"
+                  alt=""
+                  alt=""
+                />
               </div>
+              <ul class="d-flex ps-0 pt-3">
+                <li class="ms-0">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/company/upgrad-campus/"
+                    ><img src="img/social-logo2.svg" width="18" alt=""
+                  /></a>
+                </li>
+                <li class="ms-4">
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCInfgHHfcrqFOnGEVYB49EQ"
+                    ><img src="img/social-logo3.svg" width="18" alt=""
+                  /></a>
+                </li>
+                <li class="ms-4">
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/upgradcampus/"
+                    ><img src="img/social-logo4.svg" width="18" alt=""
+                  /></a>
+                </li>
+                <li class="ms-4">
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/upgradcampus/"
+                    ><img src="img/social-logo5.svg" width="18" alt=""
+                  /></a>
+                </li>
+                <li class="ms-4">
+                  <a target="_blank" href="https://twitter.com/upgrad_campus"
+                    ><img src="img/social-logo6.svg" width="18" alt=""
+                  /></a>
+                </li>
+              </ul>
 
-            </form>
-
+              <p>@ 2022 UpGrad Campus Private Limited</p>
+            </div>
           </div>
 
+          <div class="col-md-2">
+            <div class="secondDiv">
+              <ul class="ps-0">
+                <li><a href="/">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog-page.html">Blog</a></li>
+                <li><a href="terms-of-use.html">Term of Use</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="secondDiv">
+              <ul class="ps-0">
+                <li>
+                  <a href="LectureCaptureSystem.html">Lecture Capture System</a>
+                </li>
+                <li>
+                  <a href="UC_TP_Blended_Classrom.html">Blended Classroom</a>
+                </li>
+                <li><a href="UC_TP_Live_Classrom.html">Live Classroom</a></li>
+                <li>
+                  <a href="UC_LP_Joint-cer-2.html"
+                    >Joint Certification (2-4) Years</a
+                  >
+                </li>
+                <li>
+                  <a href="UC_LP_Jointcer56.html"
+                    >Job Ready Certification (5-6) Months</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form">
+              <h6>Newsletter subscription.</h6>
+              <form action="" method="post">
+                <div class="d-flex">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Email address"
+                  />
+                  <button type="submit" class="btn">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-
       </div>
+    </footer>
 
-    </div>
-  </footer>
+    <!-- ========== footer end ========== -->
 
-  <!-- ========== footer end ========== -->
-
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

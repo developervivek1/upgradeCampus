@@ -1308,7 +1308,7 @@ img.blog-banner {
   border-color: transparent !important;
   }
   .widget.widget-search {
-  padding: 40px 30px 39px 23px;
+  padding: 40px 30px 18px 23px;
   }
   .search-box button.input-group-text, .btn-success:hover {
   background: transparent !important;
@@ -1391,6 +1391,7 @@ img.blog-banner {
   }
   ul.psted-info img {
   margin-right: 6px;
+  margin-top: -5px;
   }
   .post-content .media {
   padding-top: 0 !important;
@@ -1452,9 +1453,9 @@ img.blog-banner {
   font-weight: 500 !important;
   text-decoration: none;
   }
-  .post-content .article-content ul {
+  .post-content .article-content ul.content-imges {
   padding-left: 0px;
-  margin-top: 50px;
+  margin: 40px 0px 35px 0px;
   }
   .post-content .article-content li {
   position: relative;
@@ -1478,6 +1479,10 @@ img.blog-banner {
   font-size: 17px;
   color: #9496A0;
   line-height: 23px;
+  margin-bottom: 20px
+  }
+  p.content-img img {
+    margin-bottom: 50px !important;
   }
   .article-img img {
   border-radius: 15px !important;
@@ -1488,6 +1493,9 @@ img.blog-banner {
   .lpa-left.media-body img {
   border-radius: 8px;
   }
+  .article-content ul {
+    padding-left: 0px;
+}
   /*---------Blog Detail End----------*/
   
   /*---------Contact Page Start---------*/
@@ -1759,6 +1767,16 @@ img.blog-banner {
   .office-box-right {
   padding-left: 25px;
   }
+  .contact-box [class*="col-"] {
+    margin-bottom: 0;
+  }
+  .contact-box .was-validated .phoneno:before {
+    height: 55%;
+  }
+   .contact-box .form-control.is-valid, .was-validated .form-control:valid {
+    background: transparent !important;
+  }
+
   /*---------Contact Info end---------*/
   /*---------Contact Page End---------*/
   
@@ -1926,7 +1944,7 @@ img.blog-banner {
   .blog-aside .widget{
   margin-bottom: 32px !important;
   padding-top: 30px !important; 
-  padding-bottom: 30px !important;
+  padding-bottom: 8px !important;
   padding-left: 20px !important; 
   }
   .widget.widget-latest-post {
@@ -1946,7 +1964,6 @@ img.blog-banner {
   /*============ Contact===============*/
   section.contact-form input.form-control, section.contact-form textarea.form-control, section.contact-form select.form-select {
   padding: 16px;
-  margin-bottom: 10px;
   line-height: 18px;
   }
   .sel {
@@ -1997,7 +2014,7 @@ img.blog-banner {
   margin-bottom: 36px;
   }
   .widget.widget-search {
-  padding: 23px 10px 23px 10px !important;
+  padding: 23px 10px 5px 10px !important;
   }
   .widget.widget-latest-post {
   padding-right: 20px;
@@ -2050,7 +2067,7 @@ img.blog-banner {
   .blog-aside .widget{
   margin-bottom: 32px !important;
   padding-top: 30px !important; 
-  padding-bottom: 30px !important;
+  padding-bottom: 7px !important;
   padding-left: 20px !important; 
   }
   .widget.widget-latest-post {
@@ -2256,6 +2273,13 @@ img.blog-banner {
   .contact-form textarea {
   margin-top: 19px;
   }
+  .was-validated .phoneno:before {
+    height: 59%;
+  }
+  .contact-box .invalid-feedback {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
   }
   /*============ Contact Page ===============*/
   /*============ blog post===============*/
@@ -2311,6 +2335,7 @@ img.blog-banner {
   font-size: 14px;
   color: #74757A;
   line-height: 19px;
+  margin-bottom: 20px
   }
   ul.psted-info {
   margin-bottom: 0px;
@@ -2368,6 +2393,12 @@ img.blog-banner {
   width: 6px;
   height: 6px;
   }
+   
+  .post-content .article-content ul.content-imges {
+  padding-left: 0px;
+  margin: 40px 0px;
+  } 
+
   }
   @media only screen and (min-width: 480px) and (max-width: 640px) {
   .search-box .input-group.mb-3 {
@@ -2494,6 +2525,14 @@ img.blog-banner {
   margin-bottom: 16px;
   font-weight: 600;
   }
+  .post-content .article-content ul.content-imges {
+    margin: 25px 0px;
+  }
+  
+  p.content-img img {
+    margin-bottom: 13px !important;
+  }
+
   }
   @media only screen and (min-width: 640px) and (max-width:768px) {
   .blog-single .lpa-left {
@@ -2658,6 +2697,7 @@ img.blog-banner {
 
 
 /* ============= chetan ============== */
+/* ============= chetan ============== */
 /* First Section */
 .main-section {
   background-color: #fbf6f6;
@@ -2665,6 +2705,10 @@ img.blog-banner {
   padding-bottom: 90px;
   padding-left: 90px;
   padding-right: 90px;
+}
+a:link, a:visited{
+  text-decoration: none !important;
+  color: #000;
 }
 .main-image {
   border-top-left-radius: 150px;
@@ -2676,6 +2720,9 @@ img.blog-banner {
   font-size: 64px;
   text-align: left;
   font-weight: bold;
+}
+.main-section h1 span {
+  font-size: 64px !important;
 }
 .main-section p {
   color: #424143;
@@ -2898,6 +2945,13 @@ line {
   width: 350px;
 }
 
+.card .card-body ul{
+  list-style-type: inherit;
+}
+.card .card-first,.card-second,.card-third{
+  height: 40vh;
+}
+
 /* Extra Small Responvise  */
 @media only screen and (max-width: 400px) {
   .button1,
@@ -3001,6 +3055,9 @@ line {
   .main-section h1 {
     font-size: 26px;
   }
+  .main-section h1 span {
+    font-size: 26px !important;
+  }
   .main-section p {
     font-size: 14px;
     padding-top: 05px !important;
@@ -3075,6 +3132,9 @@ line {
   .main-section h1 {
     font-size: 34px;
   }
+  .main-section h1 span {
+    font-size: 34px !important;
+  }
   .card-first {
     height: 100% !important;
   }
@@ -3132,6 +3192,9 @@ line {
   .main-section h1 {
     font-size: 34px;
   }
+  .main-section h1 span {
+    font-size: 34px !important;
+  }
   .product-third,
   .product-first,
   .product-second {
@@ -3173,6 +3236,9 @@ line {
   }
   .main-section h1 {
     font-size: 54px;
+  }
+  .main-section h1 span {
+    font-size: 54px !important;
   }
 
   .product-first {
@@ -3223,9 +3289,6 @@ line {
 }
 
 /* =========== chetan end css ============== */
-
-
-
 
   
 
