@@ -57,7 +57,7 @@
           <ul class="navbar-nav ms-md-auto">
             <li class="nav-item">
               <a
-                class="nav-link position-relative show"
+                class="nav-link position-relative active"
                 href="index.html"
                 
                 aria-expanded="true"
@@ -1257,14 +1257,17 @@
           0: {
             items: 1,
             margin: 10,
+            loop: true,
+            center: false,
             stagePadding: 30,
-            URLhashListener: true,
+            URLhashListener: false,
             smartSpeed: 400,
-            autoplay:false,
+            autoplay:true,
             autoplayHoverPause: true,
+            slideTransition: 'linear',
             // autoWidth:true,
             // autoHeight: true,
-            startPosition: 'URLHash',
+            startPosition: '0',
           },
           600: {
             items: 2,

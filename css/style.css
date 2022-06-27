@@ -175,6 +175,20 @@ body{
   left: 50%;
   border-radius: 100%;
 }
+.nav-link.active > span::after{
+  position: absolute;
+  content: "";
+  background: #EC2A3D;
+  color: #EC2A3D !important;
+  width: 6px;
+  height: 6px;
+  bottom: 0px;
+  left: 50%;
+  border-radius: 100%;
+}
+.nav-link.active > span{
+  color: #EC2A3D !important;
+}
 
 .nav-link.show{
   color: #EC2A3D;
@@ -270,7 +284,7 @@ body{
 
 .videoText h1{
     color: #EE2C3C;
-    font-family: Avenir LT Pro, 95  !important;
+    font-family: AvenirLTProMedium;
     font-weight: 900;
 }
 
@@ -308,6 +322,7 @@ body{
 }
 
 .bottomBox div p{
+    font-family:AvenirLTProMedium ;
     font-weight: 500;
     margin-top: 5px;
     font-size: 13px;
@@ -607,9 +622,11 @@ box-shadow: 0px 10px 60px #262D7614;
   height: 100vh;
 }
 .title h4{
+  font-family:AvenirLTProMedium ;
   font-weight: 900;
 }
 .title h4 span{
+  font-family:AvenirLTProMedium ;
   font-weight: 900;
   color: #EE2C3C;
 }
