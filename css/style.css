@@ -353,30 +353,37 @@ body{
 }
 
 .banner-section .carousel-inner{
-  overflow: visible;
+  /* overflow-x: hidden;
+  overflow-y: visible; */
+  /* height: 450px; */
   width: 96%;
   margin: auto;
 }
 
 .banner-section .carousel-item{
-  padding: 45px 48px 53px;
+  padding: 55px 0px;
   border-radius: 15px;
   position: relative;
 }
-.banner-section .carousel-item.maroonbg{
+.banner-section .carousel-item .maroonbg{
   background: #331316;
+  border-radius: 25px;
+    padding: 31px;
+    background: #331316;
 }
-.banner-section .carousel-item.greenbg{
+.banner-section .carousel-item .greenbg{
   background: #3A5144;
+  border-radius: 25px;
+    padding: 31px;
 }
 
 .banner-section .carousel-item .right-img{
   position: absolute;
-  right: 48px;
-  top: 45px;
+  right: 35px;
+  top: 90px;
   width: 45%;
-  height: 411px;
-  border-radius: 12px; 
+  height: 386px;
+  border-radius: 12px;
   z-index: 0;
 }
 
@@ -415,7 +422,7 @@ body{
 
 .banner-section .text_part h3{
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   word-spacing: 1.5px;
   letter-spacing: 0.8px;
@@ -470,14 +477,14 @@ body{
 
 .banner-section .enrollBtn{
   position: absolute;
-  bottom: -28px;
-  left: 48px;
+  bottom: 25px;
+  left: 82px;
   font-size: 14px;
   background: #EE2C3C 0% 0% no-repeat padding-box;
   border-radius: 8px;
   opacity: 1;
   width: 150px;
-  height: 57px;
+  height: 50px;
   color: #FFFFFF;
   box-shadow: 0px 2px 20px #EE2C3C61;
 }
@@ -496,7 +503,7 @@ body{
   
  .banner-section .carousel-indicators {
     margin-bottom: 0px;
-    bottom: -78px;
+    bottom: -40px;
   }
   
 .banner-section .carousel-indicators button {
