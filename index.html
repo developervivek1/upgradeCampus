@@ -532,7 +532,7 @@
     <div class="container title text-center">
       <h4 class="mb-0">Our <span>Partners</span></h4>
       <img src="img/underline-black.svg" alt="">
-      <p>upGrad Campus has partnered with various institutions to provide new age <br> solutions</p>
+      <p>upGrad Campus has partnered with various institutions to provide new age solutions</p>
 
     </div>
     <div class="container-fluid sliderDiv pt-5 ">
@@ -832,14 +832,14 @@
 
   <!-- =========== Recruiter Brand Section start =========== -->
 
-  <section class="brandSection mt-md-5 pt-md-5 mb-md-5 pb-md-5">
+  <section class="brandSection mt-md-0 pt-md-0 mb-md-0 pb-md-0">
     <div class="container w-75">
       <div class="title text-center">
         <h4 class="mb-0">Previous <span>Recruiters</span></h4>
         <img src="img/underline-black.svg" alt="">
       </div>
 
-      <div class="row pt-5 mt-5">
+      <div class="row mt-5">
         <div class="large-12 columns">
           <div class="owl-two owl-carousel owl-theme">
             <div class="item">
@@ -916,76 +916,6 @@
         })
       </script> -->
 
-    <script>
-      $(document).ready(function () {
-        $('.owl-one').owlCarousel({
-          items: 4,
-          loop: false,
-          center: true,
-          margin: 30,
-          nav: true,
-          callbacks: true,
-          URLhashListener: false,
-          autoplayHoverPause: true,
-          startPosition: 'URLHash',
-          slideTransition: 'linear',
-          smartSpeed: 400,
-          animateIn: 'linear',
-          animateOut: 'linear',
-
-          responsive: {
-            0: {
-              items: 1,
-              margin: 10,
-              stagePadding: 30,
-              URLhashListener: true,
-              smartSpeed: 400,
-              autoplay:false,
-              autoplayHoverPause: true,
-              // autoWidth:true,
-              // autoHeight: true,
-              startPosition: 'URLHash',
-            },
-            600: {
-              items: 2,
-              startPosition: 'URLHash',
-            },
-            1000: {
-              items: 4
-            }
-          }
-
-
-        });
-
-        $('.owl-two').owlCarousel({
-          items: 6,
-          loop: true,
-          margin: 30,
-          nav: false,
-          dots: false,
-          autoplay: true,
-          autoplayTimeout: 1500,
-          autoplayHoverPause: true,
-          smartSpeed: 1500,
-          animateIn: 'linear',
-          animateOut: 'linear',
-
-          responsive: {
-            0: {
-              items: 3
-            },
-            600: {
-              items: 2
-            },
-            1000: {
-              items: 6
-            }
-          }
-        });
-
-      });
-    </script>
   </section>
 
   <!-- =========== Recruiter Brand Section end =========== -->
@@ -1002,7 +932,7 @@
       <div class="container title text-center">
         <h4 class="mb-0">Our <span>Tech Product Offerings</span></h4>
         <img src="img/underline-black.svg" alt="">
-        <p>Our products provide a full stack offering for institutions to transition into the <br> future of education
+        <p>Our products provide a full stack offering for institutions to transition into the future of education
         </p>
       </div>
 
@@ -1130,8 +1060,8 @@
 
 
   <!-- =========== New Age Section =========== -->
-  <section class="NewAgeSection mt-5 pt-5 mb-5 pb-5">
-    <div class="container pt-5">
+  <section class="NewAgeSection mt-5 mb-3 pt-5 pb-5">
+    <div class="container pt-0">
 
       <div class="container title text-center">
         <h4 class="mb-0">New-Age Programs for <span>Campus Collaboration</span></h4>
@@ -1139,7 +1069,7 @@
 
       </div>
 
-      <div class="container mt-5 pt-4 NewAgeCard">
+      <div class="container mt-4 pt-4 NewAgeCard">
         <div class="row ">
           <div class="col-6 col-md-6">
             <div class="card1 bg-white">
@@ -1304,6 +1234,78 @@
 
   <!-- ========== footer end ========== -->
 
+  <script>
+    $(document).ready(function () {
+      $('.owl-one').owlCarousel({
+        items: 4,
+        loop: true,
+        center: true,
+        margin: 30,
+        nav: true,
+        callbacks: true,
+        URLhashListener: false,
+        autoplay:true,
+        autoplayHoverPause: true,
+        autoplayTimeout:2000,
+        startPosition: '1',
+        slideTransition: 'linear',
+        smartSpeed: 400,
+        animateIn: 'linear',
+        animateOut: 'linear',
+
+        responsive: {
+          0: {
+            items: 1,
+            margin: 10,
+            stagePadding: 30,
+            URLhashListener: true,
+            smartSpeed: 400,
+            autoplay:false,
+            autoplayHoverPause: true,
+            // autoWidth:true,
+            // autoHeight: true,
+            startPosition: 'URLHash',
+          },
+          600: {
+            items: 2,
+            startPosition: 'URLHash',
+          },
+          1000: {
+            items: 4
+          }
+        }
+
+
+      });
+
+      $('.owl-two').owlCarousel({
+        items: 6,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        smartSpeed: 1500,
+        animateIn: 'linear',
+        animateOut: 'linear',
+
+        responsive: {
+          0: {
+            items: 3
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 6
+          }
+        }
+      });
+
+    });
+  </script>
 
   <script src="js/script.js"></script>
   <!-- bs-5 -->

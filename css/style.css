@@ -573,8 +573,12 @@ box-shadow: 0px 10px 60px #262D7614;
     opacity: .45 !important;
   } */
 
-  .owl-stage .owl-item{
+ .owl-stage .owl-item{
     opacity: .35;
+  }
+
+  .owl-two .owl-stage .owl-item{
+    opacity: 1;
   }
 
 
@@ -672,8 +676,8 @@ box-shadow: 0px 10px 60px #262D7614;
 /* tech Product css */
 
 .techProduct{
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   background-image: url('../img/square.svg') ;
   background-size: contain;
   background-position-x: right;
@@ -744,7 +748,7 @@ box-shadow: 0px 10px 60px #262D7614;
 
 footer {
   background-color: #424143;
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .imgFooter{
@@ -3717,6 +3721,14 @@ footer ul{
 .techProduct {
   margin-top: 7rem;
   margin-bottom: 3rem;
+}
+
+footer .order-1{
+  order: 1;
+}
+
+footer .order-2{
+  order: 2;
 }
 
 }
