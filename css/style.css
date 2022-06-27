@@ -704,10 +704,12 @@ box-shadow: 0px 10px 60px #262D7614;
 }
 
 
-.techCard .scaleIcon {
+.techCard .scaleIcon img{
   position: absolute;
-  bottom: 173px;
-  left: 35px;
+  bottom: 0px;
+  width: 21%;
+  left: -5px;
+  top: 109px;
 }
 
 .techCard .card3 {
@@ -732,10 +734,12 @@ box-shadow: 0px 10px 60px #262D7614;
   font-weight: 400;
 }
 
-.NewAgeCard .scaleIcon {
-    position: absolute;
-    bottom: 193px;
-    left: 35px;
+.NewAgeCard .scaleIcon img{
+  position: absolute;
+  bottom: 0;
+  top: 104px;
+  left: -5px;
+  width: 22%;
 }
 
 footer {
@@ -3611,7 +3615,7 @@ footer .form button {
 
 
 .techCard .row{
-  width: 245%;
+  width: 270%;
 }
 
 
@@ -3626,6 +3630,14 @@ footer .form button {
 .NewAgeCard .row{
   width: 200%;
 
+}
+
+.techCard .col-md-4 {
+  padding: 8px;
+}
+
+.NewAgeCard .col-md-4 {
+  padding: 3px;
 }
 
 /* hero video */
