@@ -527,8 +527,8 @@ box-shadow: 0px 10px 60px #262D7614;
 
   .scaleIcon {
     position: absolute;
-    bottom: 143px;
-    left: 35px;
+    bottom: 128px;
+    left: 22px;
   }
 
   .scaleIcon img{
@@ -3636,9 +3636,19 @@ footer .form button {
   padding: 8px;
 }
 
-.NewAgeCard .col-md-4 {
-  padding: 3px;
+.NewAgeCard .col-md-6 {
+  padding: 7px;
 }
+
+footer .firstDiv{
+  margin: 0 auto;
+}
+
+footer ul{
+  
+}
+
+
 
 /* hero video */
 /* 
