@@ -338,10 +338,7 @@ body{
 
 
 /* ====== Banner Section ====== */
-
-.bannerSize{
-    width: 96%;
-}
+/* ====== Banner Section ====== */
 
 .btn:hover, .btn:focus {
   color: #FFFFFF;
@@ -355,20 +352,141 @@ body{
   transform: scaleX(1.4);
 }
 
-.enrollBtn{
-    position: absolute;
-    bottom: 6px;
-    left: 41px;
-    font-size: 14px;
-    background: #EE2C3C 0% 0% no-repeat padding-box;
-    border-radius: 10px;
-    opacity: 1;
-    width: 150px;
-    height: 50px;
-    color: #FFFFFF;
+.banner-section .carousel-inner{
+  overflow: visible;
+  width: 96%;
+  margin: auto;
 }
 
-.carousel-indicators button.active {
+.banner-section .carousel-item{
+  padding: 45px 48px 53px;
+  border-radius: 15px;
+  position: relative;
+}
+.banner-section .carousel-item.maroonbg{
+  background: #331316;
+}
+.banner-section .carousel-item.greenbg{
+  background: #3A5144;
+}
+
+.banner-section .carousel-item .right-img{
+  position: absolute;
+  right: 48px;
+  top: 45px;
+  width: 45%;
+  height: 411px;
+  border-radius: 12px; 
+  z-index: 0;
+}
+
+.banner-section .carousel-item .right-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: 40% 50%; 
+}
+
+.banner-section .grp_logo{
+  margin-bottom: 65px;
+  width: 100%;
+  height: auto;
+}
+
+.banner-section .grp_logo img{
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.banner-section .text_part{
+  margin-bottom: 25px;
+}
+
+.banner-section .text_part h5{
+  opacity: 0.86;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 17px;
+  font-size: 18px;
+}
+
+.banner-section .text_part h3{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  word-spacing: 1.5px;
+  letter-spacing: 0.8px;
+  margin-bottom: 0px;
+}
+
+.banner-section .text_part img{
+  width: 23.5%;
+  margin-left: 22px;
+}
+
+.banner-section .bar_div{
+  width: 86%;
+  height: 83px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.15);
+  padding: 0 15px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 111;
+}
+
+.banner-section .bar_div .col-md-3{
+  margin-bottom: 0px;
+}
+
+.banner-section .bar_div .icon-sm {
+  width: 70px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 26px #00000012;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.banner-section .bar_div .icon-sm img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+
+.banner-section .bar_div .col-md-3 p{
+  font-size: 14px;
+  color: #3B3B51;
+}
+
+.banner-section .enrollBtn{
+  position: absolute;
+  bottom: -28px;
+  left: 48px;
+  font-size: 14px;
+  background: #EE2C3C 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  width: 150px;
+  height: 57px;
+  color: #FFFFFF;
+  box-shadow: 0px 2px 20px #EE2C3C61;
+}
+
+.banner-section .enrollBtn img{
+  width: 22px;
+}
+
+.banner-section .carousel-indicators button.active {
     opacity: 1;
     background-color: #EE2C3C;
     width: 25px;
@@ -376,12 +494,12 @@ body{
     transition: all 0.3s ease;
   }
   
-  .carousel-indicators {
+ .banner-section .carousel-indicators {
     margin-bottom: 0px;
-    bottom: -30px;
+    bottom: -78px;
   }
   
-  .carousel-indicators button {
+.banner-section .carousel-indicators button {
     border-radius: 50px;
   }
   
@@ -411,31 +529,35 @@ body{
 
 
   .carousel-control-prev{
-    top: 40%;
+    top: 37%;
     width: 44px;
     height: 30px;
     border-radius: 50px;
-    /* background: #ee8f98;
-    padding: 6px; */
+    left: 0.2%;
   }
 
 
   .carousel-control-next{
-    top: 40%;
+    top: 37%;
     width: 42px;
     height: 30px;
     border-radius: 50px;
-    /* background: #ee8f98;
-    padding: 6px; */
+    right: 0.3%;
   }
 
   .carousel-control-prev-icon {
-    background-image: url('../img/left-aero.svg')
+    background-image: url('../img/left-aero.svg');
+    /* background-color: rgba(238, 44, 60, 0.2);
+    border-radius: 50px; */
   }
 
   .carousel-control-next-icon {
-    background-image: url('../img/aero-right.svg')
+    background-image: url('../img/aero-right.svg');
+    /* background-color: rgba(238, 44, 60, 0.2);
+    border-radius: 50px; */
   }
+
+/* banner section end */
 
 
   .card1 {
@@ -3777,6 +3899,7 @@ footer .order-2{
 
 
 
+
 /* ==== zeeshan header css responsive==== */
 @media(min-width:991px)
 {
@@ -3994,6 +4117,82 @@ footer .order-2{
   header .w-100
   {
     flex-wrap: wrap;
+  }
+  .banner-section .carousel-item {
+    padding: 20px 38px 40px;
+    text-align: center;
+  }
+  .banner-section .grp_logo {
+    margin-bottom: 28px;
+  }
+  .banner-section .grp_logo img {
+    width: 50%;
+  }
+  .banner-section .text_part h5 {
+    margin-bottom: 11px;
+    font-size: 12px;
+  }
+  .banner-section .text_part h3 {
+    font-size: 14px;
+  }
+  .banner-section .text_part img {
+    width: 68%;
+    margin-left: 0px;
+    height: 13px;
+    margin-top: -12px;
+  }
+  .banner-section .bar_div {
+    width: 100%;
+    padding: 15px 15px 3px;
+    margin-top: 138px;
+    text-align: start;
+    height: auto;
+  }
+  .banner-section .bar_div .icon-sm {
+    width: 58px;
+    height: 42px;
+    border-radius: 7px;
+  }
+  .banner-section .bar_div .icon-sm img {
+    width: 50%;
+    height: 90%;
+  }
+  .banner-section .bar_div .col-md-3 {
+    margin-bottom: 10px;
+  }
+  .banner-section .bar_div .col-md-3 p {
+    font-size: 12px;
+    color: #000;
+  }
+  .banner-section .carousel-item .right-img {
+    right: 6.2%;
+    top: 149px;
+    height: 210px;
+    width: 87.6%;
+  }
+  .banner-section .enrollBtn {
+    position: absolute;
+    bottom: -25px;
+    left: 24px;
+    font-size: 12px;
+    width: 125px;
+    height: 49px;
+  }
+  .banner-section .enrollBtn img {
+    width: 20px;
+    margin-top: 1px;
+  }
+  .banner-section .carousel-control-prev {
+    top: 37%;
+    width: 25px;
+    height: 25px;
+    left: 4.2%;
+  }
+  .banner-section .carousel-control-next {
+    top: 37%;
+    width: 25px;
+    height: 25px;
+    right: 4.3%;
   }
 }
 
