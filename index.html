@@ -560,7 +560,7 @@
                 <img src="img/Universities.png" alt="">
 
                 <div class="mt-2">
-                  <h6 class="mb-0">280+</h6>
+                  <h6 class="mb-0"><span class="count" data-target="280">0</span> +</h6>
                   <p class="mb-0">Universities</p>
                 </div>
 
@@ -572,9 +572,9 @@
                 <img src="img/Professors.png" alt="">
 
 
-                <div class="mt-2">
+                <div class="counter mt-2">
 
-                  <h6 class="mb-0">60k +</h6>
+                  <h6 class="mb-0"><span class="count" data-target="60">0</span> k+</h6>
                   <p class="mb-0">Professors</p>
                 </div>
 
@@ -586,9 +586,9 @@
                 <img src="img/Students.png" alt="">
 
 
-                <div class="mt-2">
+                <div class="counter mt-2">
 
-                  <h6 class="mb-0">2 Mn+</h6>
+                  <h6 class="mb-0"><span class="count" data-target="2">2</span> Mn+</h6>
                   <p class="mb-0">Students</p>
                 </div>
 
@@ -600,9 +600,9 @@
                 <img src="img/Learning Minutes.png" alt="">
 
 
-                <div class="mt-2">
+                <div class="counter mt-2">
 
-                  <h6 class="mb-0">3 Bn+</h6>
+                  <h6 class="mb-0"><span class="count" data-target="3">3</span> Bn+</h6>
                   <p class="mb-0">Learning Minutes</p>
                 </div>
 
@@ -616,6 +616,7 @@
     </div>
 
   </section>
+
   <!-- =========== hero section end/ =========== -->
 
  <!-- ========== Banner Section =========== -->
@@ -1256,9 +1257,6 @@
                 <div class="card3 position-relative">
                   <img class="scaleImg" src="img/techProduct1.jpg" alt="">
 
-                  <div class="whiteTap bg-white p-2">
-                    <h6 class="mb-0">100% Placement Assistence</h6>
-                  </div>
 
 
                 </div>
@@ -1293,9 +1291,6 @@
                 <div class="card3 position-relative">
                   <img class="scaleImg" src="img/techProduct2.jpg" alt="">
 
-                  <div class="whiteTap bg-white p-2">
-                    <h6 class="mb-0">100% Placement Assistence</h6>
-                  </div>
 
 
                 </div>
@@ -1328,10 +1323,6 @@
               <div class="card2 p-3 position-relative">
                 <div class="card3 position-relative">
                   <img class="scaleImg" src="img/techProduct3.jpg" alt="">
-
-                  <div class="whiteTap bg-white p-2">
-                    <h6 class="mb-0">100% Placement Assistence</h6>
-                  </div>
 
 
                 </div>
@@ -1389,11 +1380,6 @@
                 <div class="card3 position-relative">
                   <img class="scaleImg" src="img/newAge1.jpg" alt="">
 
-                  <div class="whiteTap bg-white p-2">
-                    <h6 class="mb-0">100% Placement Assistence</h6>
-                  </div>
-
-
                 </div>
                 <div class="scaleIcon position-relative">
                   <img src="img/newAgelogo1.png" class="w-40" alt="">
@@ -1423,11 +1409,6 @@
               <div class="card2 p-3 position-relative">
                 <div class="card3 position-relative">
                   <img class="scaleImg" src="img/newAge2.jpg" alt="">
-
-                  <div class="whiteTap bg-white p-2">
-                    <h6 class="mb-0">100% Placement Assistence</h6>
-                  </div>
-
 
                 </div>
                 <div class="scaleIcon position-relative">
@@ -1463,7 +1444,12 @@
 
   <!-- ============= New Age Section End ============= -->
 
-
+  <div class="whatsapp">
+    <a href="https://wa.me/919353055355?text=Hi,%20I%20want%20to%20discuss%20about%20upGrad%20Campus" target="_blank">
+      <img src="img/Chat with us.png" alt="">
+      
+    </a>
+  </div>
   <!-- ========== footer start ========== -->
 
   <footer class="text-white pt-5 pb-5 ">
@@ -1544,6 +1530,8 @@
     </div>
   </footer>
 
+
+
   <!-- ========== footer end ========== -->
 
   <script>
@@ -1553,7 +1541,7 @@
         loop: true,
         center: true,
         margin: 30,
-        nav: true,
+        nav: false,
         callbacks: true,
         URLhashListener: false,
         autoplay:true,
@@ -1623,6 +1611,34 @@
   </script>
 
   <script src="js/script.js"></script>
+
+
+  <script>
+    const counters = document.querySelectorAll(".count");
+    const speed = 60;
+    const speed2 = 2;
+
+counters.forEach((counter) => {
+const updateCount = () => {
+  const target = parseInt(+counter.getAttribute("data-target"));
+  const count = parseInt(+counter.innerText);
+  const increment = Math.trunc(target / speed);
+  const increment2 = Math.trunc(target / speed2);
+  console.log(increment);
+
+  if (count < target) {
+    counter.innerText = count + increment;
+    setTimeout(updateCount, 1);
+  }
+  
+   else {
+    count.innerText = target;
+  }
+};
+updateCount();
+});
+
+</script>
   <!-- bs-5 -->
   
   <!-- JavaScript Bundle with Popper -->
