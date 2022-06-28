@@ -1090,7 +1090,7 @@ img.blog-banner {
   }
   .blog-post {
   box-shadow: -1px 0px 21px #262d7614;
-  border-radius: 20px;
+  border-radius: 33px;
   background: #FFFFFF;
   }
   .blog-img img {
@@ -1310,12 +1310,12 @@ img.blog-banner {
   margin-right: 10px;
   }
   .tag-cloud a {
-  padding: 12px 25px;
-  font-size: 13px;
+  padding: 12px 15px;
+  font-size: 14px;
   color: #424143;
   background: transparent;
   border-radius: 5px;
-  margin-right: 16px;
+  margin-right: 10px;
   margin-bottom: 16px;
   line-height: 18px;
   border: solid 1px #CAC7C7;
@@ -1497,8 +1497,11 @@ img.blog-banner {
   .btn-outline-secondary {
   border-color: transparent !important;
   }
+  .search-box .col-md-10.mx-auto {
+    margin-bottom: 0px;
+  }
   .widget.widget-search {
-  padding: 40px 30px 18px 23px;
+  padding: 40px 30px 40px 23px;
   }
   .search-box button.input-group-text, .btn-success:hover {
   background: transparent !important;
@@ -1693,14 +1696,14 @@ img.blog-banner {
   section.contact-form .contact-box, .contact-info .contact-box {
   box-shadow: 0px 10px 48px #262d7614;
   border-radius: 20px;
-  padding: 73px 91px;
+  padding: 50px 30px;
   background: #ffffff;
   }
   .contact-info .contact-box {
-  margin-bottom: 131px;
+  margin-bottom: 60px;
   }
   .contact-form{
-  margin: 198px 0px 60px 0px;
+  margin: 150px 0px 60px 0px;
   }
   .contact h1 {
   font-size: 44px;
@@ -1832,7 +1835,7 @@ img.blog-banner {
   .sel {
   border: solid 1px #CDCDCD !important;
   border-radius: 9px;
-  padding: 27px 0px 26px 27px;
+  padding: 24px 0px 24px 27px;
   margin-bottom: 22px;
   }
   .sel--black-panther {
@@ -1841,6 +1844,12 @@ img.blog-banner {
   .sel.sel--black-panther.active {
   z-index: 1;
   }
+  span#insError, span#proError {
+    top: 73px;
+    left: 0;
+    color: #dc3545;
+    font-size: 15px;
+}
   /* ===== Keyframes ===== */
   @keyframes fadeInUp {
   from {
@@ -1875,7 +1884,7 @@ img.blog-banner {
   }
   .contact-form textarea {
   height: 237px;
-  margin-top: 44px ;
+  margin-top: 0px ;
   }
   .contact-form  button {
   padding: 19px 68px !important;
@@ -1909,6 +1918,7 @@ img.blog-banner {
   color: #424143;
   opacity: 0.8;
   }
+
   /*---------Contact Form end---------*/
   /*---------Contact Info start---------*/
   section.contact-info .container {
@@ -1927,9 +1937,9 @@ img.blog-banner {
   font-size: 24px;
   line-height: 40px;
   color: #404040;
-  padding-bottom: 51px;
-  border-bottom: solid 1px #424143;
-  margin-bottom: 50px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px #CDCDCD;
+  margin-bottom: 25px;
   font-weight: 500;
   }
   .contact-info-text a, .contact-our-office a{
@@ -2134,8 +2144,8 @@ img.blog-banner {
   .blog-aside .widget{
   margin-bottom: 32px !important;
   padding-top: 30px !important; 
-  padding-bottom: 8px !important;
-  padding-left: 20px !important; 
+  padding-bottom: 30px !important;
+  padding-left: 10px !important; 
   }
   .widget.widget-latest-post {
   padding-right: 20px !important;
@@ -2157,7 +2167,7 @@ img.blog-banner {
   line-height: 18px;
   }
   .sel {
-  padding: 16px;
+  padding: 14px;
   }
   .contact h1 {
   font-size: 30px;
@@ -2204,7 +2214,7 @@ img.blog-banner {
   margin-bottom: 36px;
   }
   .widget.widget-search {
-  padding: 23px 10px 5px 10px !important;
+  padding: 23px 10px 23px 10px !important;
   }
   .widget.widget-latest-post {
   padding-right: 20px;
@@ -2236,8 +2246,9 @@ img.blog-banner {
   padding: 50px;
   }
   .sel {
-  padding: 16px;
+  padding: 14px;
   }
+  
   }
   @media only screen and (min-width: 1000px) and (max-width: 1278px) {
   /*============ Body Bg===============*/
@@ -2257,7 +2268,7 @@ img.blog-banner {
   .blog-aside .widget{
   margin-bottom: 32px !important;
   padding-top: 30px !important; 
-  padding-bottom: 7px !important;
+  padding-bottom: 32px !important;
   padding-left: 20px !important; 
   }
   .widget.widget-latest-post {
@@ -2308,8 +2319,9 @@ img.blog-banner {
   padding: 50px;
   }
   .sel {
-  padding: 16px;
+  padding: 14px;
   }
+  
   }
   @media only screen and (min-width: 768px) and (max-width:999px) { 
   .container-fluid.container-wrap{padding: 0px 40px;}
@@ -2461,7 +2473,7 @@ img.blog-banner {
   font-size: 14px !important;
   }
   .contact-form textarea {
-  margin-top: 19px;
+  margin-top: 0px;
   }
   .was-validated .phoneno:before {
     height: 59%;
@@ -2470,6 +2482,9 @@ img.blog-banner {
     font-size: 10px;
     margin-bottom: 18px;
   }
+  span#insError, span#proError {
+    font-size: 10px;
+}
   }
   /*============ Contact Page ===============*/
   /*============ blog post===============*/
@@ -2588,7 +2603,13 @@ img.blog-banner {
   padding-left: 0px;
   margin: 40px 0px;
   } 
-
+   .invalid-feedback {
+    margin-bottom: 20px;
+}
+span#insError, span#proError {
+    top: -8px;
+    position: relative;
+}
   }
   @media only screen and (min-width: 480px) and (max-width: 640px) {
   .search-box .input-group.mb-3 {
@@ -2596,6 +2617,8 @@ img.blog-banner {
   .blog-single {
   padding: 30px 15px;
   }
+  .blog-post {
+    border-radius: 31px;}
   }
   @media only screen and (min-width: 320px) and (max-width: 470px) {
   .search-box .input-group.mb-3 {
@@ -2650,12 +2673,12 @@ img.blog-banner {
   }
   }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .tag-cloud a {
+  /*.tag-cloud a {
   color: #EE2C3C;
   border: solid 1px #EE2C3C;}
   section.blog-listing {
   margin: 0px 15px;
-  }
+  }*/
   .blog-single .search-box .input-group.mb-3 {
   background: #fff;
   }
@@ -2883,8 +2906,6 @@ img.blog-banner {
   }
   }
 /* ============== Diksha end css=============== */
-
-
 
 /* ============= chetan ============== */
 /* ============= chetan ============== */

@@ -1,3 +1,6 @@
+const select = document.querySelectorAll("#institute");
+const inserror = document.querySelector('#insError');
+const proerror = document.querySelector('#proError');
 
 
 /* ===== Logic for phone number ===== */
@@ -64,6 +67,7 @@ $('.sel__box__options').click(function() {
        
              var validation = Array.prototype.filter.call(forms, function(form) {
                form.addEventListener('submit', function(event) {
+                  validateselect();
                  if (form.checkValidity() === false) {
                    event.preventDefault();
                    event.stopPropagation();
@@ -74,4 +78,34 @@ $('.sel__box__options').click(function() {
            }, false);
          })();
  
+//=========================================================
+
+function validateselect(){ 
+   let selcount=0;
+   for(let i=0;i<select.length;i++)
+           {
+              if(select[i].value==="Institute/Organization type*")
+              {
+
+                inserror.innerText="Please Select Institute";
+                selcount++;
+              }
+              else if(select[i].value==="Which Product you're Interested in*")
+              {
+                proerror.innerText="Please Choose Product";
+                selcount++;
+              }
+              else
+              {
+                let span=select[i].closest(".sel").querySelector("span.selerror");
+                span.innerText="";
+              }
+
+           }
+
+           if (selcount===1 || selcount===2) { 
+            console.log("Hello")
+            return false;
+           }
+}
 
