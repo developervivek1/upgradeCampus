@@ -4,7 +4,28 @@ const overlay = document.querySelector('header .overlay');
 const body = document.querySelector('body');
 const limenu = document.querySelectorAll('header .navbar-nav li');
 const closeLast = document.querySelectorAll('.dropdown-last .col-md-12 > p + span');
-console.log(hamberger);
+const openDropLast = document.querySelectorAll('.navbar .subdropdown3 > li');
+
+
+openDropLast.forEach((open)=>{
+  open.addEventListener('click',(e)=>{
+    let alrtextShow = e.target.closest('ul').querySelector('a.dropdown-t.show');
+    let alrdropLast = e.target.closest('ul').querySelector('.dropdown-last.show');
+    let closeLi = e.target.closest('li').querySelector('a.dropdown-t');
+    let dropLast = e.target.closest('li').querySelector('.dropdown-last');
+    if(!closeLi.classList.contains('show') || !dropLast.classList.contains('show'))
+    {
+      if(alrtextShow!=null || alrdropLast!=null)
+      {
+        alrtextShow.classList.remove('show');
+        alrdropLast.classList.remove('show');
+      }
+      closeLi.classList.add('show');
+      dropLast.classList.add('show');
+    }
+  })
+})
+
 // on scroll navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -75,3 +96,4 @@ closeLast.forEach(elem => {
 //     }
 //   })
 // });
+

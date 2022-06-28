@@ -198,35 +198,78 @@ body{
   filter: opacity(.5) brightness(2.5) drop-shadow(0 0 0 red) contrast(321%);
 }
 
-.headDiv{
-  height: 195px;
-  padding-top: .4rem !important;
-  margin-bottom: 1rem;
+
+
+
+/* changes */
+
+.nav-link.show.joinCourse >span{
+  font-weight: 600;
+} 
+
+.navbar .dropdown-last{
+  padding: 0 33px 38px;
+}
+
+.navbar .dropdown-last .col-md-2{
+  margin-bottom: 0;
+}
+
+.headDiv {
+  height: 200px;
   background: #FAFBFC;
+  padding: 12px 21px 20px;
+  border-radius: 12px;
 }
 
 .headDiv:hover{
-  background: #FDE8EA;
+  background: #f8dcde;
 }
 
-.headDiv img{
-  width: 50%;
+.headDiv .learn-logo{
+  width: 65px;
+  height: 60px;
 }
+
+.headDiv .learn-logo.first{
+  width: 100%;
+  height: 60px;
+}
+
+.headDiv .learn-logo img{
+  width: 100%;
+  height: 100%;
+  object-position: 0% 0%;
+}
+
+.headDiv .learn-logo.first img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 0% 50%;
+}
+
+/* .headDiv img{
+  width: 50%;
+  height: 50px;
+} */
 
 .headDiv h6{
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0px;
   color: #424143;
   font-weight: 900;
   opacity: 1;
-  margin-bottom: 1.3rem;
+  height: 44px;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
 }
 
 .headDiv a{
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 0px;
-  color: #EE2C3C;
+  color: #EE2C3C !important;
   opacity: 1;
   text-decoration: none;
   margin-bottom: 1rem;
@@ -240,6 +283,7 @@ body{
   margin-bottom: 0px;
   margin-top: 5px;
 }
+/* changes end */
 
 
 .btnStudent{
@@ -3832,7 +3876,7 @@ footer .form button {
 
 .NewAgeCard{
   height: 100%;
-  width: 95%;
+  width: 100%;
   overflow-x: scroll;
 }
 
@@ -3985,7 +4029,6 @@ footer .imgFooter:hover .imgRed{
 
 
 
-
 /* ==== zeeshan header css responsive==== */
 @media(min-width:991px)
 {
@@ -3996,6 +4039,9 @@ footer .imgFooter:hover .imgRed{
 }
 @media(max-width: 900px)
 {
+  #navbar{
+    width: 100%;
+  }
   header .overlay
   {
     position: fixed;
@@ -4031,7 +4077,7 @@ footer .imgFooter:hover .imgRed{
   .navbar-brand img
   {
     margin-left: -15px;
-    width: 114px;
+    width: 86px;
   }
   .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
     overflow-y: auto;
@@ -4043,10 +4089,6 @@ footer .imgFooter:hover .imgRed{
   .navbar .navbar-collapse ul li {
     padding: 3px 0px;
   }
-  .navbar .navbar-collapse ul:first-child li:last-child
-  {
-    margin-bottom: 0.8rem;
-  }
   .navbar .navbar-collapse ul:last-child
   {
     padding-bottom: 0.3rem;
@@ -4056,6 +4098,10 @@ footer .imgFooter:hover .imgRed{
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+  .navbar .navbar-collapse ul:last-child li a
+  {
+    color: #424143;
   }
   .btnStudent {
     background: none;
@@ -4135,24 +4181,25 @@ footer .imgFooter:hover .imgRed{
   } */
   .subdropdown3 .dropdown-last
   {
-    position: absolute;
-    top: -357px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
     width: 100%;
     z-index: 1000;
     left: 0;
-    max-height: 100vh;
+    max-height: 102vh;
     overflow: auto;
-    padding: 2rem 0.9rem 1rem;
+    padding: 2rem 1rem 1rem;
   }
   .subdropdown3 .dropdown-last .col-md-12
   {
-    padding: 0 0.8rem 1.8rem;
+    padding: 0 0.8rem 0.6rem;
   }
   .subdropdown3 .dropdown-last .col-md-12 >p
   {
     color: #000;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 13px;
     margin: 0;
     text-transform: capitalize;
   }
@@ -4164,7 +4211,12 @@ footer .imgFooter:hover .imgRed{
     width: 40px;
   }
   .dropdown-last .headDiv {
-    margin-bottom: 1.2rem;
+    height: 180px;
+    padding: 16px;
+  }
+  .headDiv .learn-logo {
+    width: 45px;
+    height: 40px;
   }
   .dropdown-last .headDiv img
   {
@@ -4172,44 +4224,58 @@ footer .imgFooter:hover .imgRed{
   }
   .dropdown-last .headDiv h6 {
     font-size: 13px;
+    height: auto;
   }
   .dropdown-last .headDiv a {
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     align-items: center;
+    font-size: 12px;
     width: 96%;
-    justify-content: space-between;
+    margin-bottom: 0.5rem;
   }
-  .dropdown-last .headDiv a span
-  {
-    background: url(../img/arrow-right-red.svg) no-repeat 0% 60%;
+  .dropdown-last .headDiv a span {
+    background: url(../img/arrow-right-red.svg) no-repeat 50% 37%;
     height: 15px;
     background-size: contain;
     width: 11px;
     display: block;
+    margin-left: 10px;
   }
-  .dropdown-last .headDiv p
-  {
+  .dropdown-last .headDiv p {
     color: #555555;
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: 0px;
   }
   .dropdown-last .headDiv p span
   {
     text-transform: uppercase;
     color: #9c9ea7 !important;
-    margin-right: 5px;
     font-size: 12px;
   }
   header .w-100
   {
     flex-wrap: wrap;
   }
-  .banner-section .carousel-item {
-    padding: 20px 38px 40px;
-    text-align: center;
+  .banner-section .carousel-indicators {
+    bottom: 0px;
   }
+  .banner-section .carousel-inner {
+    width: 100%;
+    height: 100vh;
+  }
+  .banner-section .carousel-item {
+    padding: 20px 5px 40px;
+    text-align: center;
+    border-radius: 13px;
+  }
+  .banner-section .carousel-item .maroonbg,
+  .banner-section .carousel-item .greenbg {
+    padding: 20px 30px 40px;
+  }
+
   .banner-section .grp_logo {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
   }
   .banner-section .grp_logo img {
     width: 50%;
@@ -4230,7 +4296,7 @@ footer .imgFooter:hover .imgRed{
   .banner-section .bar_div {
     width: 100%;
     padding: 15px 15px 3px;
-    margin-top: 138px;
+    margin-top: 134px;
     text-align: start;
     height: auto;
   }
@@ -4252,13 +4318,13 @@ footer .imgFooter:hover .imgRed{
   }
   .banner-section .carousel-item .right-img {
     right: 6.2%;
-    top: 149px;
+    top: 177px;
     height: 210px;
     width: 87.6%;
   }
   .banner-section .enrollBtn {
     position: absolute;
-    bottom: -25px;
+    bottom: 16px;
     left: 24px;
     font-size: 12px;
     width: 125px;
@@ -4272,13 +4338,13 @@ footer .imgFooter:hover .imgRed{
     top: 37%;
     width: 25px;
     height: 25px;
-    left: 4.2%;
+    left: 2.5%;
   }
   .banner-section .carousel-control-next {
     top: 37%;
     width: 25px;
     height: 25px;
-    right: 4.3%;
+    right: 2.3%;
   }
 }
 
