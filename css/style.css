@@ -636,7 +636,7 @@ box-shadow: 0px 10px 60px #262D7614;
     filter: opacity(0.6) brightness(0.5) drop-shadow(0 0 0 red) contrast(321%);
   }
 
-  .cardBtn:hover img{
+  .card1:hover .cardBtn img{
     filter: opacity(0.6) brightness(0.9) drop-shadow(0 0 0 white) contrast(321%);
     transform: scale(1);
   }
@@ -658,7 +658,7 @@ box-shadow: 0px 10px 60px #262D7614;
     display: block;
   } */
 
-  .cardBtn:hover {
+  .card1:hover .cardBtn{
     /* transition: all 0.5s; */
     background: #EC2A3D;
     color: #fff;
