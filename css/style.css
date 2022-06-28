@@ -2955,6 +2955,62 @@ span#insError, span#proError {
 /* ============= chetan ============== */
 /* ============= chetan ============== */
 /* First Section */
+.t-title{
+  font-size: 16px;
+  color: #9496A0;
+  text-align: left;
+  vertical-align:top;
+  padding-right: 10px;
+}
+.slider-image-container{
+  display: inline-block;
+  overflow: hidden; 
+  border-radius: 20px;
+  height: 350px;
+
+}
+.slider-image-container img {
+  display: block;
+  transition: transform 1s;   /* smoother zoom */
+}
+.slider-card:hover:hover .slider-image-container img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+.slider-card{
+margin-bottom: 50px;
+height: 600px;
+}
+.slider-image{
+height: 300px;
+}
+.slider-card .card-text{
+  font-weight: bold;
+  font-size: 26px;
+  
+  }
+.slider-card:hover .card-text{
+color: #EC2A3D;
+}
+
+.t-data{
+  font-size: 16px;
+  color: #535253;
+  text-align: left;
+  vertical-align:top;
+  padding-left: 10px;
+}
+.slider-table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+.slider-row tr{
+  margin-bottom: 15px;
+}
+#slider--1{
+  margin-right: 20px;
+  margin-left: 20px;
+}
 .main-section {
   background-color: #fbf6f6;
   padding-top: 90px;
@@ -3125,6 +3181,12 @@ p {
     rgba(251, 246, 246, 1) 50%
   );
 }
+.third-section-1 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: rgb(251,246,246);
+background: linear-gradient(90deg, rgba(251,246,246,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 50%);
+}
 
 .third-section h1 {
   color: #ee2c3c;
@@ -3134,7 +3196,7 @@ p {
   border: 0px;
   box-shadow: 0px 10px 60px #262d7614;
   padding: 10px;
-  border-radius: 20px 20px 0px 20px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .third-section .row {
@@ -3142,7 +3204,7 @@ p {
 }
 
 /* Fourth Section */
-
+.logo-image img{width:auto !important}
 .logo-section h1 {
   color: #424143;
 }
@@ -3411,6 +3473,12 @@ line {
     align-items: center;
     padding: 0px;
   }
+  .slider-card {
+    margin-bottom: 50px;
+    height: 600px;
+    width: 350px;
+}
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -3466,6 +3534,7 @@ line {
     margin: 20px;
     height: 100% !important;
   }
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -3542,10 +3611,14 @@ line {
   .cards-3 {
     width: 350px;
   }
+
+
 }
+
 
 /* =========== chetan end css ============== */
 
+  
   
 
 /* ============ desktop view ============ */
