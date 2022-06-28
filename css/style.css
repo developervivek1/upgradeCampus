@@ -3920,17 +3920,38 @@ footer ul{
   margin-bottom: 3rem;
 }
 
-footer .order-1{
+footer .order1{
   order: 1;
 }
+footer .order1{
+ text-align: center;
+ padding-bottom: 2rem;
+}
 
-footer .order-2{
+footer .order1 ul{
+  display: flex;
+  justify-content: center;
+}
+
+footer .order2{
   order: 2;
+  text-align: center;
+}
+
+footer .order2 form .d-flex{
+   display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;  
+}
+
+
+footer .order3{
+  order: 3;
 }
 
 }
 
-/* end 600px */
+/*my css end 600px */
 
 
 
