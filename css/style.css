@@ -165,6 +165,7 @@ body{
 }
 
 .nav-link.show > span::after{
+  z-index: 2000;
   position: absolute;
   content: "";
   background: #EC2A3D;
