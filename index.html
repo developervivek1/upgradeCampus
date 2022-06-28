@@ -1547,46 +1547,20 @@
   <script>
     $(document).ready(function () {
       $('.owl-one').owlCarousel({
-        items: 4,
-        loop: true,
         center: true,
-        margin: 30,
-        nav: false,
-        callbacks: true,
-        URLhashListener: false,
-        autoplay:true,
-        autoplayHoverPause: true,
-        autoplayTimeout:2000,
-        startPosition: '1',
-        slideTransition: 'linear',
-        smartSpeed: 400,
-        animateIn: 'linear',
-        animateOut: 'linear',
-
-        responsive: {
-          0: {
-            items: 1,
-            margin: 10,
-            loop: true,
-            center: false,
-            stagePadding: 30,
-            URLhashListener: false,
-            smartSpeed: 400,
-            autoplay:true,
-            autoplayHoverPause: true,
-            slideTransition: 'linear',
-            // autoWidth:true,
-            // autoHeight: true,
-            startPosition: '0',
-          },
-          600: {
-            items: 2,
-            startPosition: 'URLHash',
-          },
-          1000: {
-            items: 4
-          }
+    items:4,
+    loop:true,
+    autoplay: true,
+    margin:10,
+    responsive:{
+        0:{
+          stagePadding:20,
+          items:1
+        },
+        600:{
+            items:4
         }
+    }
 
 
       });
