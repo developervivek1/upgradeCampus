@@ -356,10 +356,11 @@ body{
   border-color: #EE2C3C;
 }
 .btn img{
+  margin-top: 2px;
   transition: all 0.5s;
 }
 .btn:hover img{
-  transform: scaleX(1.5);
+  transform: scale(1.4);
 }
 
 .banner-section .carousel-inner{
@@ -690,7 +691,7 @@ box-shadow: 0px 10px 60px #262D7614;
   }
 
   .sliderDiv .owl-dots{
-    margin-top: 3rem;
+    margin-top: 3rem !important;
   }
 
 
@@ -3777,7 +3778,7 @@ footer .form button {
 }
 
 .sliderDiv .owl-dots {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .owl-theme .owl-nav {
