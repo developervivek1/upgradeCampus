@@ -199,6 +199,8 @@ body{
 }
 
 .headDiv{
+  height: 195px;
+  padding-top: .4rem !important;
   margin-bottom: 1rem;
   background: #FAFBFC;
 }
@@ -206,12 +208,13 @@ body{
 .headDiv:hover{
   background: #FDE8EA;
 }
+
 .headDiv img{
-  width: 100%;
+  width: 50%;
 }
 
 .headDiv h6{
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0px;
   color: #424143;
   font-weight: 900;
