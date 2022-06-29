@@ -3979,10 +3979,6 @@ footer .firstDiv{
   margin: 0 auto;
 }
 
-footer ul{
-  
-}
-
 
 
 /* hero video */
@@ -4047,6 +4043,10 @@ footer ul{
   text-align: center;
 }
 
+.sliderDiv {
+  height: 75vh;
+}
+
 
 /* brand recruiters */
 
@@ -4097,12 +4097,12 @@ footer .order3{
   order: 3;
 }
 
-footer .imgFooter:hover .imgRed{
+/* footer .imgFooter:hover .imgRed{
   left: 50%;
   margin: 0;
   top: 50%;
   transform: translate(-57%, -50%);
-}
+} */
 
 }
 
