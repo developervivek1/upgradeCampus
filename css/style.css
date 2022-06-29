@@ -979,6 +979,11 @@ footer {
 }
 
 .imgFooter{
+  position: absolute;
+  /* bottom: 50px; */
+}
+
+footer .firstDiv{
   position: relative;
 }
 
@@ -988,14 +993,17 @@ footer .imgFooter .imgRed{
 }
 
 footer .imgFooter .imgRed,.imgGrey{
+  
   transition: all 0.5s;
 }
 
 footer .imgFooter:hover .imgRed{
   display: inline-block;
-  position: absolute;
-  left: 0;
+  transition: all 0.5s;
   cursor: pointer;
+}
+footer .imgFooter:hover .imgGrey{
+  display: none;
 }
 
 
@@ -1020,11 +1028,11 @@ footer .secondDiv ul li:hover{
   opacity: 1;
 }
 
-.firstDiv ul li a img{
+.firstDiv2 ul li a img{
   transition: all 0.5s;
 }
 
-.firstDiv ul li a:hover img{
+.firstDiv2 ul li a:hover img{
   transform: rotate3d(1, 1, 1, 360deg);
 }
 
@@ -1033,7 +1041,7 @@ footer .secondDiv ul li:hover{
   text-decoration: none;
 }
 
-footer .firstDiv p{
+footer .firstDiv2 p{
   margin-top: 15px;
   font-size: 11px;
   letter-spacing: 0px;
